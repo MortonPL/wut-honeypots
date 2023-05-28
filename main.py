@@ -20,7 +20,7 @@ HONEYPOT_STOP = {
     "cowrie": "docker stop auto-cowrie && docker rm auto-cowrie",
 }
 
-SSH_START = "ssh -T -o \"StrictHostKeyChecking=no\" -p 2222 root@127.0.0.1"
+SSH_START = "ssh -T -o \"StrictHostKeyChecking=no\" -o \"KexAlgorithms=+diffie-hellman-group1-sha1\" -p 2222 root@127.0.0.1"
 SSH_STOP = "exit"
 HONEYPOT_SSH_STOP = "exit"
 
