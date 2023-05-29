@@ -29,14 +29,15 @@ echo "good password" | sudo -S ls /
 
 # Making file executable
 
+echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+echo "echo HELLO" > ~/hello.sh
 chmod +x ~/malicious_script.sh
-chmod +x ~/hello_wget.sh
-chmod +x ~/hello_curl.sh
+chmod +x ~/hello.sh
 
 
 # Adding cron task to run uploaded script
 
-(crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello_wget.sh) | crontab -
+(crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
 
 
 # Running uploaded script
