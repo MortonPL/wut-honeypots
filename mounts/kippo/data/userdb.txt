@@ -1,0 +1,2 @@
+root:0:123456
+marcin001:1001:zdt7*UHB
