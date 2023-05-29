@@ -1,354 +1,434 @@
-2023-05-29 02:38:11+0000 [-] Log opened.
-2023-05-29 02:38:11+0000 [-] twistd 15.1.0 (/usr/local/bin/python 2.7.15) starting up.
-2023-05-29 02:38:11+0000 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
-2023-05-29 02:38:11+0000 [-] HoneyPotSSHFactory starting on 2222
-2023-05-29 02:38:11+0000 [-] Starting factory <kippo.core.ssh.HoneyPotSSHFactory instance at 0x7fbd8f492e18>
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44962 (172.17.0.2:2222) [session: 0]
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44972 (172.17.0.2:2222) [session: 1]
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44978 (172.17.0.2:2222) [session: 2]
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44990 (172.17.0.2:2222) [session: 3]
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44996 (172.17.0.2:2222) [session: 4]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,0,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Enum-Algos
-2023-05-29 02:38:34+0000 [HoneyPotTransport,0,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-dss
-2023-05-29 02:38:34+0000 [HoneyPotTransport,0,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,0,172.17.0.4] incoming: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,3,172.17.0.4] Disconnecting with error, code 8
+2023-05-29 03:31:20+0000 [-] Log opened.
+2023-05-29 03:31:20+0000 [-] twistd 15.1.0 (/usr/local/bin/python 2.7.15) starting up.
+2023-05-29 03:31:20+0000 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2023-05-29 03:31:20+0000 [-] HoneyPotSSHFactory starting on 2222
+2023-05-29 03:31:20+0000 [-] Starting factory <kippo.core.ssh.HoneyPotSSHFactory instance at 0x7f9a96946e18>
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57940 (172.17.0.2:2222) [session: 0]
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57952 (172.17.0.2:2222) [session: 1]
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57966 (172.17.0.2:2222) [session: 2]
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57970 (172.17.0.2:2222) [session: 3]
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57980 (172.17.0.2:2222) [session: 4]
+2023-05-29 03:31:39+0000 [HoneyPotTransport,0,172.17.0.4] Disconnecting with error, code 8
 	reason: bad version 1.5
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,3,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [HoneyPotTransport,4,172.17.0.4] Disconnecting with error, code 8
+2023-05-29 03:31:39+0000 [HoneyPotTransport,0,172.17.0.4] connection lost
+2023-05-29 03:31:39+0000 [HoneyPotTransport,3,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Enum-Algos
+2023-05-29 03:31:39+0000 [HoneyPotTransport,3,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-dss
+2023-05-29 03:31:39+0000 [HoneyPotTransport,3,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
+2023-05-29 03:31:39+0000 [HoneyPotTransport,3,172.17.0.4] incoming: aes128-cbc hmac-md5 none
+2023-05-29 03:31:39+0000 [HoneyPotTransport,1,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:39+0000 [HoneyPotTransport,1,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:39+0000 [HoneyPotTransport,1,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:39+0000 [HoneyPotTransport,1,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:39+0000 [HoneyPotTransport,4,172.17.0.4] Disconnecting with error, code 8
 	reason: bad version 1.5
-2023-05-29 02:38:34+0000 [HoneyPotTransport,4,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [HoneyPotTransport,0,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:45010 (172.17.0.2:2222) [session: 5]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,5,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,5,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-dss
-2023-05-29 02:38:34+0000 [HoneyPotTransport,5,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,5,172.17.0.4] incoming: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] NEW KEYS
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:38:34+0000 [SSHService ssh-userauth on HoneyPotTransport,2,172.17.0.4] XVIEI trying auth none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,5,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44498 (172.17.0.2:2222) [session: 6]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,2,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [HoneyPotTransport,6,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,6,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:38:34+0000 [HoneyPotTransport,6,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,6,172.17.0.4] incoming: aes128-cbc hmac-md5 none
-2023-05-29 02:38:34+0000 [HoneyPotTransport,6,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44502 (172.17.0.2:2222) [session: 7]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,7,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,7,172.17.0.4] Disconnecting with error, code 3
+2023-05-29 03:31:39+0000 [HoneyPotTransport,4,172.17.0.4] connection lost
+2023-05-29 03:31:39+0000 [HoneyPotTransport,3,172.17.0.4] connection lost
+2023-05-29 03:31:39+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57986 (172.17.0.2:2222) [session: 5]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,1,172.17.0.4] NEW KEYS
+2023-05-29 03:31:40+0000 [HoneyPotTransport,1,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:40+0000 [HoneyPotTransport,5,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,5,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-dss
+2023-05-29 03:31:40+0000 [HoneyPotTransport,5,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,5,172.17.0.4] incoming: aes128-cbc hmac-md5 none
+2023-05-29 03:31:40+0000 [SSHService ssh-userauth on HoneyPotTransport,1,172.17.0.4] DVCLG trying auth none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,1,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [HoneyPotTransport,5,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57988 (172.17.0.2:2222) [session: 6]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,6,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,6,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:31:40+0000 [HoneyPotTransport,6,172.17.0.4] outgoing: aes128-cbc hmac-md5 none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,6,172.17.0.4] incoming: aes128-cbc hmac-md5 none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,6,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57996 (172.17.0.2:2222) [session: 7]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,7,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,7,172.17.0.4] Disconnecting with error, code 3
 	reason: couldn't match all kex parts
-2023-05-29 02:38:34+0000 [HoneyPotTransport,7,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44514 (172.17.0.2:2222) [session: 8]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,8,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,8,172.17.0.4] Disconnecting with error, code 3
+2023-05-29 03:31:40+0000 [HoneyPotTransport,7,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:58002 (172.17.0.2:2222) [session: 8]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,8,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,8,172.17.0.4] Disconnecting with error, code 3
 	reason: couldn't match all kex parts
-2023-05-29 02:38:34+0000 [HoneyPotTransport,8,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44520 (172.17.0.2:2222) [session: 9]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,9,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,9,172.17.0.4] Disconnecting with error, code 3
+2023-05-29 03:31:40+0000 [HoneyPotTransport,8,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:58014 (172.17.0.2:2222) [session: 9]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,9,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,9,172.17.0.4] Disconnecting with error, code 3
 	reason: couldn't match all kex parts
-2023-05-29 02:38:34+0000 [HoneyPotTransport,9,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44534 (172.17.0.2:2222) [session: 10]
-2023-05-29 02:38:34+0000 [HoneyPotTransport,10,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29 02:38:34+0000 [HoneyPotTransport,10,172.17.0.4] Disconnecting with error, code 3
+2023-05-29 03:31:40+0000 [HoneyPotTransport,9,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:58020 (172.17.0.2:2222) [session: 10]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,10,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29 03:31:40+0000 [HoneyPotTransport,10,172.17.0.4] Disconnecting with error, code 3
 	reason: couldn't match all kex parts
-2023-05-29 02:38:34+0000 [HoneyPotTransport,10,172.17.0.4] connection lost
-2023-05-29 02:38:34+0000 [HoneyPotTransport,1,172.17.0.4] connection lost
-2023-05-29 02:38:35+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44536 (172.17.0.2:2222) [session: 11]
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] NEW KEYS
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:38:35+0000 [SSHService ssh-userauth on HoneyPotTransport,11,172.17.0.4] root trying auth none
-2023-05-29 02:38:35+0000 [HoneyPotTransport,11,172.17.0.4] connection lost
-2023-05-29 02:38:35+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:44540 (172.17.0.2:2222) [session: 12]
-2023-05-29 02:38:35+0000 [HoneyPotTransport,12,172.17.0.4] Disconnecting with error, code 8
+2023-05-29 03:31:40+0000 [HoneyPotTransport,10,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [HoneyPotTransport,2,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:58030 (172.17.0.2:2222) [session: 11]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] NEW KEYS
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:40+0000 [SSHService ssh-userauth on HoneyPotTransport,11,172.17.0.4] root trying auth none
+2023-05-29 03:31:40+0000 [HoneyPotTransport,11,172.17.0.4] connection lost
+2023-05-29 03:31:40+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:58034 (172.17.0.2:2222) [session: 12]
+2023-05-29 03:31:40+0000 [HoneyPotTransport,12,172.17.0.4] Disconnecting with error, code 8
 	reason: bad version 1.0
-2023-05-29 02:38:35+0000 [HoneyPotTransport,12,172.17.0.4] connection lost
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46028 (172.17.0.2:2222) [session: 13]
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,13,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,13,172.17.0.4] root trying auth none
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46034 (172.17.0.2:2222) [session: 14]
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46044 (172.17.0.2:2222) [session: 15]
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46054 (172.17.0.2:2222) [session: 16]
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46070 (172.17.0.2:2222) [session: 17]
-2023-05-29 02:39:30+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46076 (172.17.0.2:2222) [session: 18]
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,14,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,15,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,16,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,17,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] NEW KEYS
-2023-05-29 02:39:30+0000 [HoneyPotTransport,18,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,14,172.17.0.4] jkaczmarski trying auth password
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,14,172.17.0.4] login attempt [jkaczmarski/jkaczmarski] failed
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,15,172.17.0.4] marcin001 trying auth password
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,15,172.17.0.4] login attempt [marcin001/marcin001] failed
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,16,172.17.0.4] jkaczmarski trying auth password
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,16,172.17.0.4] login attempt [jkaczmarski/12345678] failed
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,17,172.17.0.4] marcin001 trying auth password
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,17,172.17.0.4] login attempt [marcin001/12345678] failed
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,18,172.17.0.4] jkaczmarski trying auth password
-2023-05-29 02:39:30+0000 [SSHService ssh-userauth on HoneyPotTransport,18,172.17.0.4] login attempt [jkaczmarski/zdt7*UHB] failed
-2023-05-29 02:39:31+0000 [-] jkaczmarski failed auth password
-2023-05-29 02:39:31+0000 [-] unauthorized login: 
-2023-05-29 02:39:31+0000 [-] marcin001 failed auth password
-2023-05-29 02:39:31+0000 [-] unauthorized login: 
-2023-05-29 02:39:31+0000 [-] jkaczmarski failed auth password
-2023-05-29 02:39:31+0000 [-] unauthorized login: 
-2023-05-29 02:39:31+0000 [-] marcin001 failed auth password
-2023-05-29 02:39:31+0000 [-] unauthorized login: 
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46080 (172.17.0.2:2222) [session: 19]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46096 (172.17.0.2:2222) [session: 20]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46100 (172.17.0.2:2222) [session: 21]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46114 (172.17.0.2:2222) [session: 22]
-2023-05-29 02:39:31+0000 [-] jkaczmarski failed auth password
-2023-05-29 02:39:31+0000 [-] unauthorized login: 
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46130 (172.17.0.2:2222) [session: 23]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46134 (172.17.0.2:2222) [session: 24]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46146 (172.17.0.2:2222) [session: 25]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46150 (172.17.0.2:2222) [session: 26]
-2023-05-29 02:39:31+0000 [HoneyPotTransport,19,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,19,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,19,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,19,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,20,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,20,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,20,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,20,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46162 (172.17.0.2:2222) [session: 27]
-2023-05-29 02:39:31+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46172 (172.17.0.2:2222) [session: 28]
-2023-05-29 02:39:31+0000 [HoneyPotTransport,21,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,21,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,21,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,21,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,22,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,22,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,22,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,22,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,18,172.17.0.4] connection lost
-2023-05-29 02:39:31+0000 [HoneyPotTransport,17,172.17.0.4] connection lost
-2023-05-29 02:39:31+0000 [HoneyPotTransport,15,172.17.0.4] connection lost
-2023-05-29 02:39:31+0000 [HoneyPotTransport,14,172.17.0.4] connection lost
-2023-05-29 02:39:31+0000 [HoneyPotTransport,13,172.17.0.4] connection lost
-2023-05-29 02:39:31+0000 [HoneyPotTransport,27,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,27,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,27,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,27,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,28,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,28,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,28,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,28,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,23,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,23,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,23,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,23,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,24,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,24,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,24,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,24,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,25,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,25,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,25,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,25,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,26,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:31+0000 [HoneyPotTransport,26,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:31+0000 [HoneyPotTransport,26,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:31+0000 [HoneyPotTransport,26,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:32+0000 [HoneyPotTransport,23,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,23,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,20,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,20,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,22,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,22,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,19,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,19,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,21,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,21,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [SSHService ssh-userauth on HoneyPotTransport,23,172.17.0.4] marcin001 trying auth password
-2023-05-29 02:39:32+0000 [SSHService ssh-userauth on HoneyPotTransport,23,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
-2023-05-29 02:39:32+0000 [SSHService ssh-userauth on HoneyPotTransport,23,172.17.0.4] marcin001 authenticated with password
-2023-05-29 02:39:32+0000 [SSHService ssh-userauth on HoneyPotTransport,23,172.17.0.4] starting service ssh-connection
-2023-05-29 02:39:32+0000 [HoneyPotTransport,24,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,24,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46176 (172.17.0.2:2222) [session: 29]
-2023-05-29 02:39:32+0000 [HoneyPotTransport,19,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,20,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,24,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,22,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,16,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,21,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,25,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,25,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,26,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,26,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,27,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,27,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,28,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,28,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,28,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,27,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,25,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,26,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] NEW KEYS
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:32+0000 [HoneyPotTransport,29,172.17.0.4] connection lost
-2023-05-29 02:39:32+0000 [HoneyPotTransport,23,172.17.0.4] connection lost
-2023-05-29 02:39:33+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46178 (172.17.0.2:2222) [session: 30]
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] NEW KEYS
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,30,172.17.0.4] jkaczmarski trying auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,30,172.17.0.4] jkaczmarski failed auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,30,172.17.0.4] reason: ('unsupported authentication, failing', None)
-2023-05-29 02:39:33+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46180 (172.17.0.2:2222) [session: 31]
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] NEW KEYS
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,31,172.17.0.4] jkaczmarski trying auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,31,172.17.0.4] jkaczmarski failed auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,31,172.17.0.4] reason: ('unsupported authentication, failing', None)
-2023-05-29 02:39:33+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46192 (172.17.0.2:2222) [session: 32]
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,30,172.17.0.4] connection lost
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] NEW KEYS
-2023-05-29 02:39:33+0000 [HoneyPotTransport,32,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,32,172.17.0.4] marcin001 trying auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,32,172.17.0.4] marcin001 failed auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,32,172.17.0.4] reason: ('unsupported authentication, failing', None)
-2023-05-29 02:39:33+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:46200 (172.17.0.2:2222) [session: 33]
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] NEW KEYS
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,33,172.17.0.4] marcin001 trying auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,33,172.17.0.4] marcin001 failed auth publickey
-2023-05-29 02:39:33+0000 [SSHService ssh-userauth on HoneyPotTransport,33,172.17.0.4] reason: ('unsupported authentication, failing', None)
-2023-05-29 02:39:33+0000 [HoneyPotTransport,33,172.17.0.4] connection lost
-2023-05-29 02:39:33+0000 [HoneyPotTransport,31,172.17.0.4] connection lost
-2023-05-29 02:39:34+0000 [HoneyPotTransport,32,172.17.0.4] connection lost
-2023-05-29 02:39:43+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:32922 (172.17.0.2:2222) [session: 34]
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] NEW KEYS
-2023-05-29 02:39:43+0000 [HoneyPotTransport,34,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:43+0000 [SSHService ssh-userauth on HoneyPotTransport,34,172.17.0.4] marcin001 trying auth none
-2023-05-29 02:39:43+0000 [SSHService ssh-userauth on HoneyPotTransport,34,172.17.0.4] marcin001 trying auth keyboard-interactive
-2023-05-29 02:39:43+0000 [SSHService ssh-userauth on HoneyPotTransport,34,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
-2023-05-29 02:39:43+0000 [SSHService ssh-userauth on HoneyPotTransport,34,172.17.0.4] marcin001 authenticated with keyboard-interactive
-2023-05-29 02:39:43+0000 [SSHService ssh-userauth on HoneyPotTransport,34,172.17.0.4] starting service ssh-connection
-2023-05-29 02:39:43+0000 [SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] got channel session request
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] channel open
-2023-05-29 02:39:43+0000 [SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] got global no-more-sessions@openssh.com request
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] getting shell
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Opening TTY log: log/tty/20230529-023943-7009.log
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] /etc/motd resolved into /etc/motd
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: # [SSH session commands]
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: # Listing directory contents
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: # Listing directory contents
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ## Home directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: ## Home directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ls ~
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command found: ls ~
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ls -la ~
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command found: ls -la ~
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ## Root directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: ## Root directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ls /
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command found: ls /
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ls -la /
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command found: ls -la /
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: # Printing a file to console
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: # Printing a file to console
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: ## A file from working directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command not found: ## A file from working directory
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: 
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] CMD: cat ~/my_private_file.txt
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Command found: cat ~/my_private_file.txt
-2023-05-29 02:39:43+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,34,172.17.0.4] Unhandled Error
+2023-05-29 03:31:40+0000 [HoneyPotTransport,12,172.17.0.4] connection lost
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57194 (172.17.0.2:2222) [session: 13]
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,13,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:48+0000 [SSHService ssh-userauth on HoneyPotTransport,13,172.17.0.4] root trying auth none
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57210 (172.17.0.2:2222) [session: 14]
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57222 (172.17.0.2:2222) [session: 15]
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57230 (172.17.0.2:2222) [session: 16]
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57246 (172.17.0.2:2222) [session: 17]
+2023-05-29 03:31:48+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57262 (172.17.0.2:2222) [session: 18]
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,14,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:48+0000 [SSHService ssh-userauth on HoneyPotTransport,14,172.17.0.4] jkaczmarski trying auth password
+2023-05-29 03:31:48+0000 [SSHService ssh-userauth on HoneyPotTransport,14,172.17.0.4] login attempt [jkaczmarski/jkaczmarski] failed
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,15,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,16,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,17,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] NEW KEYS
+2023-05-29 03:31:48+0000 [HoneyPotTransport,18,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,15,172.17.0.4] marcin001 trying auth password
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,15,172.17.0.4] login attempt [marcin001/marcin001] failed
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,16,172.17.0.4] jkaczmarski trying auth password
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,16,172.17.0.4] login attempt [jkaczmarski/12345678] failed
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,17,172.17.0.4] marcin001 trying auth password
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,17,172.17.0.4] login attempt [marcin001/12345678] failed
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,18,172.17.0.4] jkaczmarski trying auth password
+2023-05-29 03:31:49+0000 [SSHService ssh-userauth on HoneyPotTransport,18,172.17.0.4] login attempt [jkaczmarski/zdt7*UHB] failed
+2023-05-29 03:31:49+0000 [-] jkaczmarski failed auth password
+2023-05-29 03:31:49+0000 [-] unauthorized login: 
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57272 (172.17.0.2:2222) [session: 19]
+2023-05-29 03:31:50+0000 [-] marcin001 failed auth password
+2023-05-29 03:31:50+0000 [-] unauthorized login: 
+2023-05-29 03:31:50+0000 [-] jkaczmarski failed auth password
+2023-05-29 03:31:50+0000 [-] unauthorized login: 
+2023-05-29 03:31:50+0000 [-] marcin001 failed auth password
+2023-05-29 03:31:50+0000 [-] unauthorized login: 
+2023-05-29 03:31:50+0000 [-] jkaczmarski failed auth password
+2023-05-29 03:31:50+0000 [-] unauthorized login: 
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57288 (172.17.0.2:2222) [session: 20]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57296 (172.17.0.2:2222) [session: 21]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57304 (172.17.0.2:2222) [session: 22]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57308 (172.17.0.2:2222) [session: 23]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57318 (172.17.0.2:2222) [session: 24]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57330 (172.17.0.2:2222) [session: 25]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57336 (172.17.0.2:2222) [session: 26]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57342 (172.17.0.2:2222) [session: 27]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57350 (172.17.0.2:2222) [session: 28]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57360 (172.17.0.2:2222) [session: 29]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57364 (172.17.0.2:2222) [session: 30]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57370 (172.17.0.2:2222) [session: 31]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57374 (172.17.0.2:2222) [session: 32]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57378 (172.17.0.2:2222) [session: 33]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57392 (172.17.0.2:2222) [session: 34]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57406 (172.17.0.2:2222) [session: 35]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57420 (172.17.0.2:2222) [session: 36]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57424 (172.17.0.2:2222) [session: 37]
+2023-05-29 03:31:50+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57434 (172.17.0.2:2222) [session: 38]
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,18,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,17,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,16,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,15,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,14,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,13,172.17.0.4] connection lost
+2023-05-29 03:31:50+0000 [HoneyPotTransport,24,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,24,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,24,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,24,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,29,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,29,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,29,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,29,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,30,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,30,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,30,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,30,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,27,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,27,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,27,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,27,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,31,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,31,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,31,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,31,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,32,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,32,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,32,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,32,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,23,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,23,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,23,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,23,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,22,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,22,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,22,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,22,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,21,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,21,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,21,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,21,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,33,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,33,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,33,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,33,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,25,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,25,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,25,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,25,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,34,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,34,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,34,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,34,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,28,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,28,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,28,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,28,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,26,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,26,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,26,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,26,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,35,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,35,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,35,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,35,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,36,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,36,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,36,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,36,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,37,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,37,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,37,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,37,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,20,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,20,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,20,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,20,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,38,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:50+0000 [HoneyPotTransport,38,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:50+0000 [HoneyPotTransport,38,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,38,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] NEW KEYS
+2023-05-29 03:31:50+0000 [HoneyPotTransport,19,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [SSHService ssh-userauth on HoneyPotTransport,19,172.17.0.4] marcin001 trying auth password
+2023-05-29 03:31:51+0000 [SSHService ssh-userauth on HoneyPotTransport,19,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
+2023-05-29 03:31:51+0000 [SSHService ssh-userauth on HoneyPotTransport,19,172.17.0.4] marcin001 authenticated with password
+2023-05-29 03:31:51+0000 [SSHService ssh-userauth on HoneyPotTransport,19,172.17.0.4] starting service ssh-connection
+2023-05-29 03:31:51+0000 [HoneyPotTransport,24,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,24,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57440 (172.17.0.2:2222) [session: 39]
+2023-05-29 03:31:51+0000 [HoneyPotTransport,24,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,29,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,29,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,30,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,30,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,27,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,27,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,31,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,31,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,32,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,32,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,23,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,23,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,22,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,22,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,21,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,21,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,33,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,33,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,25,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,25,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,34,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,34,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,28,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,28,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,26,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,26,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,35,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,35,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,36,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,36,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,37,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,37,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,20,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,20,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,38,172.17.0.4] NEW KEYS
+2023-05-29 03:31:51+0000 [HoneyPotTransport,38,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:51+0000 [HoneyPotTransport,29,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,30,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,27,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,31,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,32,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,22,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,38,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,21,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,28,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,25,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,34,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,36,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,26,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,35,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,33,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,37,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,20,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,23,172.17.0.4] connection lost
+2023-05-29 03:31:51+0000 [HoneyPotTransport,39,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:51+0000 [HoneyPotTransport,39,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:51+0000 [HoneyPotTransport,39,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:51+0000 [HoneyPotTransport,39,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:52+0000 [HoneyPotTransport,39,172.17.0.4] NEW KEYS
+2023-05-29 03:31:52+0000 [HoneyPotTransport,39,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:52+0000 [HoneyPotTransport,19,172.17.0.4] connection lost
+2023-05-29 03:31:52+0000 [HoneyPotTransport,39,172.17.0.4] connection lost
+2023-05-29 03:31:53+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57444 (172.17.0.2:2222) [session: 40]
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] NEW KEYS
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,40,172.17.0.4] jkaczmarski trying auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,40,172.17.0.4] jkaczmarski failed auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,40,172.17.0.4] reason: ('unsupported authentication, failing', None)
+2023-05-29 03:31:53+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57458 (172.17.0.2:2222) [session: 41]
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] NEW KEYS
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,41,172.17.0.4] jkaczmarski trying auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,41,172.17.0.4] jkaczmarski failed auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,41,172.17.0.4] reason: ('unsupported authentication, failing', None)
+2023-05-29 03:31:53+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57464 (172.17.0.2:2222) [session: 42]
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,40,172.17.0.4] connection lost
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] NEW KEYS
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,42,172.17.0.4] marcin001 trying auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,42,172.17.0.4] marcin001 failed auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,42,172.17.0.4] reason: ('unsupported authentication, failing', None)
+2023-05-29 03:31:53+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:57476 (172.17.0.2:2222) [session: 43]
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] kex alg, key alg: diffie-hellman-group-exchange-sha1 ssh-rsa
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] NEW KEYS
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,43,172.17.0.4] marcin001 trying auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,43,172.17.0.4] marcin001 failed auth publickey
+2023-05-29 03:31:53+0000 [SSHService ssh-userauth on HoneyPotTransport,43,172.17.0.4] reason: ('unsupported authentication, failing', None)
+2023-05-29 03:31:53+0000 [HoneyPotTransport,41,172.17.0.4] connection lost
+2023-05-29 03:31:53+0000 [HoneyPotTransport,42,172.17.0.4] connection lost
+2023-05-29 03:31:53+0000 [HoneyPotTransport,43,172.17.0.4] connection lost
+2023-05-29 03:31:57+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:36306 (172.17.0.2:2222) [session: 44]
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] NEW KEYS
+2023-05-29 03:31:57+0000 [HoneyPotTransport,44,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:31:57+0000 [SSHService ssh-userauth on HoneyPotTransport,44,172.17.0.4] marcin001 trying auth none
+2023-05-29 03:31:57+0000 [SSHService ssh-userauth on HoneyPotTransport,44,172.17.0.4] marcin001 trying auth keyboard-interactive
+2023-05-29 03:31:57+0000 [SSHService ssh-userauth on HoneyPotTransport,44,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
+2023-05-29 03:31:57+0000 [SSHService ssh-userauth on HoneyPotTransport,44,172.17.0.4] marcin001 authenticated with keyboard-interactive
+2023-05-29 03:31:57+0000 [SSHService ssh-userauth on HoneyPotTransport,44,172.17.0.4] starting service ssh-connection
+2023-05-29 03:31:57+0000 [SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] got channel session request
+2023-05-29 03:31:57+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] channel open
+2023-05-29 03:31:57+0000 [SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] got global no-more-sessions@openssh.com request
+2023-05-29 03:31:57+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] getting shell
+2023-05-29 03:31:57+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Opening TTY log: log/tty/20230529-033157-535.log
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] /etc/motd resolved into /etc/motd
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: # [SSH session commands]
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: # Listing directory contents
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: # Listing directory contents
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ## Home directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: ## Home directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ls ~
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command found: ls ~
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ls -la ~
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command found: ls -la ~
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ## Root directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: ## Root directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ls /
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command found: ls /
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ls -la /
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command found: ls -la /
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: # Printing a file to console
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: # Printing a file to console
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: ## A file from working directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command not found: ## A file from working directory
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: 
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] CMD: cat ~/my_private_file.txt
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Command found: cat ~/my_private_file.txt
+2023-05-29 03:31:58+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,44,172.17.0.4] Unhandled Error
 	Traceback (most recent call last):
 	  File "/usr/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
 	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
@@ -401,222 +481,222 @@
 	    p = [x for x in p[A_CONTENTS] if x[A_NAME] == i][0]
 	exceptions.IndexError: list index out of range
 	
-2023-05-29 02:39:48+0000 [HoneyPotTransport,34,172.17.0.4] Got remote error, code 11
+2023-05-29 03:32:02+0000 [HoneyPotTransport,44,172.17.0.4] Got remote error, code 11
 	reason: disconnected by user
-2023-05-29 02:39:48+0000 [HoneyPotTransport,34,172.17.0.4] connection lost
-2023-05-29 02:39:54+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:54678 (172.17.0.2:2222) [session: 35]
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] NEW KEYS
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:54+0000 [SSHService ssh-userauth on HoneyPotTransport,35,172.17.0.4] marcin001 trying auth none
-2023-05-29 02:39:54+0000 [SSHService ssh-userauth on HoneyPotTransport,35,172.17.0.4] marcin001 trying auth keyboard-interactive
-2023-05-29 02:39:54+0000 [SSHService ssh-userauth on HoneyPotTransport,35,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
-2023-05-29 02:39:54+0000 [SSHService ssh-userauth on HoneyPotTransport,35,172.17.0.4] marcin001 authenticated with keyboard-interactive
-2023-05-29 02:39:54+0000 [SSHService ssh-userauth on HoneyPotTransport,35,172.17.0.4] starting service ssh-connection
-2023-05-29 02:39:54+0000 [SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] got channel session request
-2023-05-29 02:39:54+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] channel open
-2023-05-29 02:39:54+0000 [SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] got global no-more-sessions@openssh.com request
-2023-05-29 02:39:54+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] asking for subsystem "sftp"
-2023-05-29 02:39:54+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] {}
-2023-05-29 02:39:54+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,35,172.17.0.4] failed to get subsystem
-2023-05-29 02:39:54+0000 [HoneyPotTransport,35,172.17.0.4] connection lost
-2023-05-29 02:39:59+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:34504 (172.17.0.2:2222) [session: 36]
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] NEW KEYS
-2023-05-29 02:39:59+0000 [HoneyPotTransport,36,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:39:59+0000 [SSHService ssh-userauth on HoneyPotTransport,36,172.17.0.4] marcin001 trying auth none
-2023-05-29 02:39:59+0000 [SSHService ssh-userauth on HoneyPotTransport,36,172.17.0.4] marcin001 trying auth keyboard-interactive
-2023-05-29 02:39:59+0000 [SSHService ssh-userauth on HoneyPotTransport,36,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
-2023-05-29 02:39:59+0000 [SSHService ssh-userauth on HoneyPotTransport,36,172.17.0.4] marcin001 authenticated with keyboard-interactive
-2023-05-29 02:39:59+0000 [SSHService ssh-userauth on HoneyPotTransport,36,172.17.0.4] starting service ssh-connection
-2023-05-29 02:39:59+0000 [SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] got channel session request
-2023-05-29 02:39:59+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] channel open
-2023-05-29 02:39:59+0000 [SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] got global no-more-sessions@openssh.com request
-2023-05-29 02:39:59+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] getting shell
-2023-05-29 02:39:59+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Opening TTY log: log/tty/20230529-023959-4415.log
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] /etc/motd resolved into /etc/motd
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Command not found: # [SSH session commands]
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: # "Upload" files using command-line HTTP clients
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Command not found: # "Upload" files using command-line HTTP clients
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: ## wget
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Command not found: ## wget
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Command found: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] CMD: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Command found: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] Starting factory <HTTPProgressDownloader: http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg>
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: ## curl
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
-2023-05-29 02:40:00+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,36,172.17.0.4] INPUT: 
-2023-05-29 02:40:00+0000 [HTTPPageDownloader,client] Saving URL (http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg) to dl/20230529024000_http___sklep_kamed_com_pl_uploaded_products_classic_0002_180_jpg
-2023-05-29 02:40:00+0000 [HTTPPageDownloader,client] Updating realfile to dl/20230529024000_http___sklep_kamed_com_pl_uploaded_products_classic_0002_180_jpg
-2023-05-29 02:40:00+0000 [HTTPPageDownloader,client] Stopping factory <HTTPProgressDownloader: http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg>
-2023-05-29 02:40:04+0000 [HoneyPotTransport,36,172.17.0.4] Got remote error, code 11
+2023-05-29 03:32:02+0000 [HoneyPotTransport,44,172.17.0.4] connection lost
+2023-05-29 03:32:08+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:49024 (172.17.0.2:2222) [session: 45]
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] NEW KEYS
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:32:08+0000 [SSHService ssh-userauth on HoneyPotTransport,45,172.17.0.4] marcin001 trying auth none
+2023-05-29 03:32:08+0000 [SSHService ssh-userauth on HoneyPotTransport,45,172.17.0.4] marcin001 trying auth keyboard-interactive
+2023-05-29 03:32:08+0000 [SSHService ssh-userauth on HoneyPotTransport,45,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
+2023-05-29 03:32:08+0000 [SSHService ssh-userauth on HoneyPotTransport,45,172.17.0.4] marcin001 authenticated with keyboard-interactive
+2023-05-29 03:32:08+0000 [SSHService ssh-userauth on HoneyPotTransport,45,172.17.0.4] starting service ssh-connection
+2023-05-29 03:32:08+0000 [SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] got channel session request
+2023-05-29 03:32:08+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] channel open
+2023-05-29 03:32:08+0000 [SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] got global no-more-sessions@openssh.com request
+2023-05-29 03:32:08+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] asking for subsystem "sftp"
+2023-05-29 03:32:08+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] {}
+2023-05-29 03:32:08+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,45,172.17.0.4] failed to get subsystem
+2023-05-29 03:32:08+0000 [HoneyPotTransport,45,172.17.0.4] connection lost
+2023-05-29 03:32:18+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:47944 (172.17.0.2:2222) [session: 46]
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] NEW KEYS
+2023-05-29 03:32:18+0000 [HoneyPotTransport,46,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:32:18+0000 [SSHService ssh-userauth on HoneyPotTransport,46,172.17.0.4] marcin001 trying auth none
+2023-05-29 03:32:18+0000 [SSHService ssh-userauth on HoneyPotTransport,46,172.17.0.4] marcin001 trying auth keyboard-interactive
+2023-05-29 03:32:18+0000 [SSHService ssh-userauth on HoneyPotTransport,46,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
+2023-05-29 03:32:18+0000 [SSHService ssh-userauth on HoneyPotTransport,46,172.17.0.4] marcin001 authenticated with keyboard-interactive
+2023-05-29 03:32:18+0000 [SSHService ssh-userauth on HoneyPotTransport,46,172.17.0.4] starting service ssh-connection
+2023-05-29 03:32:18+0000 [SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] got channel session request
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] channel open
+2023-05-29 03:32:18+0000 [SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] got global no-more-sessions@openssh.com request
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] getting shell
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Opening TTY log: log/tty/20230529-033218-6490.log
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] /etc/motd resolved into /etc/motd
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Command not found: # [SSH session commands]
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: # "Upload" files using command-line HTTP clients
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Command not found: # "Upload" files using command-line HTTP clients
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: ## wget
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Command not found: ## wget
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Command found: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] CMD: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Command found: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] Starting factory <HTTPProgressDownloader: http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg>
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: ## curl
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29 03:32:18+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:19+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+2023-05-29 03:32:19+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:19+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+2023-05-29 03:32:19+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,46,172.17.0.4] INPUT: 
+2023-05-29 03:32:19+0000 [HTTPPageDownloader,client] Saving URL (http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg) to dl/20230529033218_http___sklep_kamed_com_pl_uploaded_products_classic_0002_180_jpg
+2023-05-29 03:32:19+0000 [HTTPPageDownloader,client] Updating realfile to dl/20230529033218_http___sklep_kamed_com_pl_uploaded_products_classic_0002_180_jpg
+2023-05-29 03:32:19+0000 [HTTPPageDownloader,client] Stopping factory <HTTPProgressDownloader: http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg>
+2023-05-29 03:32:23+0000 [HoneyPotTransport,46,172.17.0.4] Got remote error, code 11
 	reason: disconnected by user
-2023-05-29 02:40:04+0000 [HoneyPotTransport,36,172.17.0.4] connection lost
-2023-05-29 02:40:09+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:47118 (172.17.0.2:2222) [session: 37]
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] NEW KEYS
-2023-05-29 02:40:09+0000 [HoneyPotTransport,37,172.17.0.4] starting service ssh-userauth
-2023-05-29 02:40:09+0000 [SSHService ssh-userauth on HoneyPotTransport,37,172.17.0.4] marcin001 trying auth none
-2023-05-29 02:40:09+0000 [SSHService ssh-userauth on HoneyPotTransport,37,172.17.0.4] marcin001 trying auth keyboard-interactive
-2023-05-29 02:40:09+0000 [SSHService ssh-userauth on HoneyPotTransport,37,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
-2023-05-29 02:40:09+0000 [SSHService ssh-userauth on HoneyPotTransport,37,172.17.0.4] marcin001 authenticated with keyboard-interactive
-2023-05-29 02:40:09+0000 [SSHService ssh-userauth on HoneyPotTransport,37,172.17.0.4] starting service ssh-connection
-2023-05-29 02:40:09+0000 [SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] got channel session request
-2023-05-29 02:40:09+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] channel open
-2023-05-29 02:40:09+0000 [SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] got global no-more-sessions@openssh.com request
-2023-05-29 02:40:09+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] getting shell
-2023-05-29 02:40:09+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Opening TTY log: log/tty/20230529-024009-6029.log
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] /etc/motd resolved into /etc/motd
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # [SSH session commands]
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # File operations
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # File operations
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ## Modification
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ## Modification
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: sed -i 's/ala/koala/ig' ~/my_private_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: sed -i 's/ala/koala/ig' ~/my_private_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ## Deletion
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ## Deletion
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: rm -f ~/my_private_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: rm -f ~/my_private_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ## Creation
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ## Creation
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: echo "Example content" > ~/my_new_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo "Example content" > ~/my_new_file.txt
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # Superuser access
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # Superuser access
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ## Invalid credentials
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ## Invalid credentials
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: echo "bad password" | sudo -S ls /
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo "bad password" | sudo -S ls /
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ## Valid credentials
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ## Valid credentials
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: echo "good password" | sudo -S ls /
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo "good password" | sudo -S ls /
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # Making file executable
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # Making file executable
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: echo "echo HELLO" > ~/hello.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo "echo HELLO" > ~/hello.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: chmod +x ~/malicious_script.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: chmod +x ~/malicious_script.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: chmod +x ~/hello.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: chmod +x ~/hello.sh
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # Adding cron task to run uploaded script
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # Adding cron task to run uploaded script
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: (crontab -l
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo -n "0 4 8-14 * * "
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command found: echo -n ~/hello.sh) | crontab -
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: # Running uploaded script
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: # Running uploaded script
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: ~/malicious_script.sh &
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] Command not found: ~/malicious_script.sh &
-2023-05-29 02:40:10+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,37,172.17.0.4] CMD: 
-2023-05-29 02:40:14+0000 [HoneyPotTransport,37,172.17.0.4] Got remote error, code 11
+2023-05-29 03:32:23+0000 [HoneyPotTransport,46,172.17.0.4] connection lost
+2023-05-29 03:32:29+0000 [kippo.core.ssh.HoneyPotSSHFactory] New connection: 172.17.0.4:59442 (172.17.0.2:2222) [session: 47]
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] kex alg, key alg: diffie-hellman-group1-sha1 ssh-rsa
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] outgoing: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] incoming: aes128-ctr hmac-sha1 none
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] NEW KEYS
+2023-05-29 03:32:29+0000 [HoneyPotTransport,47,172.17.0.4] starting service ssh-userauth
+2023-05-29 03:32:29+0000 [SSHService ssh-userauth on HoneyPotTransport,47,172.17.0.4] marcin001 trying auth none
+2023-05-29 03:32:29+0000 [SSHService ssh-userauth on HoneyPotTransport,47,172.17.0.4] marcin001 trying auth keyboard-interactive
+2023-05-29 03:32:29+0000 [SSHService ssh-userauth on HoneyPotTransport,47,172.17.0.4] login attempt [marcin001/zdt7*UHB] succeeded
+2023-05-29 03:32:29+0000 [SSHService ssh-userauth on HoneyPotTransport,47,172.17.0.4] marcin001 authenticated with keyboard-interactive
+2023-05-29 03:32:29+0000 [SSHService ssh-userauth on HoneyPotTransport,47,172.17.0.4] starting service ssh-connection
+2023-05-29 03:32:29+0000 [SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] got channel session request
+2023-05-29 03:32:29+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] channel open
+2023-05-29 03:32:29+0000 [SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] got global no-more-sessions@openssh.com request
+2023-05-29 03:32:29+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] getting shell
+2023-05-29 03:32:29+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Opening TTY log: log/tty/20230529-033229-8003.log
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] /etc/motd resolved into /etc/motd
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # [SSH session commands]
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # File operations
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # File operations
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ## Modification
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ## Modification
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: sed -i 's/ala/koala/ig' ~/my_private_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: sed -i 's/ala/koala/ig' ~/my_private_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ## Deletion
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ## Deletion
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: rm -f ~/my_private_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: rm -f ~/my_private_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ## Creation
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ## Creation
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: echo "Example content" > ~/my_new_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo "Example content" > ~/my_new_file.txt
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # Superuser access
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # Superuser access
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ## Invalid credentials
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ## Invalid credentials
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: echo "bad password" | sudo -S ls /
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo "bad password" | sudo -S ls /
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ## Valid credentials
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ## Valid credentials
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: echo "good password" | sudo -S ls /
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo "good password" | sudo -S ls /
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # Making file executable
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # Making file executable
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: echo "echo HELLO" > ~/hello.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo "echo HELLO" > ~/hello.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: chmod +x ~/malicious_script.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: chmod +x ~/malicious_script.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: chmod +x ~/hello.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: chmod +x ~/hello.sh
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # Adding cron task to run uploaded script
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # Adding cron task to run uploaded script
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: (crontab -l
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo -n "0 4 8-14 * * "
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command found: echo -n ~/hello.sh) | crontab -
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: # Running uploaded script
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: # Running uploaded script
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: ~/malicious_script.sh &
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] Command not found: ~/malicious_script.sh &
+2023-05-29 03:32:30+0000 [SSHChannel session (0) on SSHService ssh-connection on HoneyPotTransport,47,172.17.0.4] CMD: 
+2023-05-29 03:32:34+0000 [HoneyPotTransport,47,172.17.0.4] Got remote error, code 11
 	reason: disconnected by user
-2023-05-29 02:40:14+0000 [HoneyPotTransport,37,172.17.0.4] connection lost
+2023-05-29 03:32:34+0000 [HoneyPotTransport,47,172.17.0.4] connection lost

@@ -1,0 +1,1045 @@
+dawid@DESKTOP-AK6U9OC:/mnt/d/Programowanie/studia/BECYB/honeypots$ docker run --name sshpass --link=kippo --expose=2222 -v ./test-cases:/usr/test-cases -v ./test-cases-local:/usr/test-cases-local -it sshpass /bin/bash
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+root@e04840cd8921:/usr# export USER=marcin001
+ HOSTroot@e04840cd8921:/usr# export HOST=kippo
+root@e04840cd8921:/usr# export PORT=2222
+ort PAroot@e04840cd8921:/usr# export PASS=zdt7*UHB
+root@e04840cd8921:/usr# (cd test-cases-local; timeout 10s ./step1-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:31 UTC
+Initiating ARP Ping Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Completed ARP Ping Scan at 03:31, 0.29s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Discovered open port 2222/tcp on 172.17.0.2
+Completed SYN Stealth Scan at 03:31, 0.25s elapsed (1 total ports)
+Nmap scan report for kippo (172.17.0.2)
+Host is up (0.00035s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.79 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:31 UTC
+Initiating ARP Ping Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Completed ARP Ping Scan at 03:31, 0.25s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Discovered open port 2222/tcp on 172.17.0.2
+Completed SYN Stealth Scan at 03:31, 0.24s elapsed (1 total ports)
+Nmap scan report for kippo (172.17.0.2)
+Host is up (0.000078s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.71 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:31 UTC
+NSE: Loaded 4 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Initiating ARP Ping Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Completed ARP Ping Scan at 03:31, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Discovered open port 2222/tcp on 172.17.0.2
+Completed SYN Stealth Scan at 03:31, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.2.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.27s elapsed
+Nmap scan report for kippo (172.17.0.2)
+Host is up (0.00017s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-auth-methods:
+|   Supported authentication methods:
+|     password
+|_    keyboard-interactive
+| ssh-hostkey:
+|   1024 cf:38:88:e5:ee:e7:6d:f4:af:d8:d2:c8:fe:e7:f9:6e (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIAAAAAAAABZRs1yUgri2Aq78mYwQMJUS5IanPcDVOhMBQWJaj7RkvuV0urASKV9/+o0l29qNFYSIhr5NQR96ErzeuaTsbS6i0bdRTpec5k4fl+n+GzVUjuSOvlwjOSCSVT9DtAUXZfJM1ryoE2pxJofd0VZ12RXG61vLmQWbJV7AAAAFQCjDCUBfG2Fow9soYLRoX55JzMPMQAAAIAnhGpEthY3XMuChAnCF83Zy1c+Sm4N7UxTbj/M7zJvQsm3pOMBM3knGk41WmoEg00TDxGPiwrTHvT6sgNdBSVwJrgJQPephaiqJ1By6uQFLimPPU+jVIe/MuG/FhUIfl7ByPIL1kGpHjGsGtS/S/DOyW5TQB9iTtVIphnJxao48QAAAIAjalMB/v4C3OGJoLO6AhWCaJ3sfKEf9sKx2EjaHMqR9mCtyGLiZtLIU1T7h7bEEBzfwZPiRaPYyX2JiecGccB2fn6b0suZ8JHBzm56rU+Oun7zjTKz+h6IuV18FJtBogxjSUXcdz5f+j9fEOP1WlMfjbmj+WWkNQjFhEtxrGInMQ==
+|   2048 68:1b:ec:23:35:4f:2e:e2:2e:f6:c6:00:07:ef:e0:5b (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCimpsOnhQvDwik2Cr4in/0fyryblX8tN03HtavUyWW1MDurTswmR88g4GOSHhoB7bT9Z7jHF3pMEp6++m/Z3ICOcjw+HaX9No6HIiw5zGLB4yEbtGZYYG/Ocaib9rd5VHREkDymJB/9kKa+rShG8wRX2boHClpEVzi3ev0mA1dVgmjco0gH+KkoJfBkNsbJTznmXsKnkrAEV9F3gz1C8AjZ4nWILxA1GzbH6hq5OBr2V4ZYSbWikWYvtdOyyAQeBaww9Oni/PCDN/7UuSTTeSstwGD35vAhivRsXOBz2/WdeiuR7DZIz+ljTwBrG64K2MHyyLkMDhFZcutNDL0k5nV
+| ssh2-enum-algos:
+|   kex_algorithms: (2)
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (12)
+|       aes256-ctr
+|       aes256-cbc
+|       aes192-ctr
+|       aes192-cbc
+|       aes128-ctr
+|       aes128-cbc
+|       cast128-ctr
+|       cast128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (2)
+|       hmac-sha1
+|       hmac-md5
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.15 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+OpenSSH_7.9p1 Debian-10+deb10u2, OpenSSL 1.1.1n  15 Mar 2022
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug2: resolving "kippo" port 2222
+debug2: ssh_connect_direct
+debug1: Connecting to kippo [172.17.0.2] port 2222.
+debug1: Connection established.
+debug1: SELinux support disabled
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: identity file /root/.ssh/id_xmss type -1
+debug1: identity file /root/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_5.1p1 Debian-5
+debug1: match: OpenSSH_5.1p1 Debian-5 pat OpenSSH_5* compat 0x0c000002
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to kippo:2222 as 'root'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
+debug2: host key algorithms: ssh-dss,ssh-rsa
+debug2: ciphers ctos: aes256-ctr,aes256-cbc,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,cast128-ctr,cast128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc
+debug2: ciphers stoc: aes256-ctr,aes256-cbc,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,cast128-ctr,cast128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc
+debug2: MACs ctos: hmac-sha1,hmac-md5
+debug2: MACs stoc: hmac-sha1,hmac-md5
+debug2: compression ctos: none,zlib
+debug2: compression stoc: none,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug1: kex: algorithm: diffie-hellman-group1-sha1
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: server->client cipher: aes128-ctr MAC: hmac-sha1 compression: none
+debug1: kex: client->server cipher: aes128-ctr MAC: hmac-sha1 compression: none
+debug1: sending SSH2_MSG_KEXDH_INIT
+debug2: bits set: 521/1024
+debug1: expecting SSH2_MSG_KEXDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:Xkq3uwA9JsMbs/qb4mIYANcu7xWYmu5Nq6gZ/sYJT0A
+debug1: checking without port identifier
+Warning: Permanently added '[kippo]:2222,[172.17.0.2]:2222' (RSA) to the list of known hosts.
+debug2: bits set: 517/1024
+debug2: set_newkeys: mode 1
+debug1: rekey after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey after 4294967296 blocks
+debug1: Will attempt key: /root/.ssh/id_rsa
+debug1: Will attempt key: /root/.ssh/id_dsa
+debug1: Will attempt key: /root/.ssh/id_ecdsa
+debug1: Will attempt key: /root/.ssh/id_ed25519
+debug1: Will attempt key: /root/.ssh/id_xmss
+debug2: pubkey_prepare: done
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: password,keyboard-interactive
+debug1: No more authentication methods to try.
+root@kippo: Permission denied (password,keyboard-interactive).
+172.17.0.2:2222 SSH-2.0-OpenSSH_5.1p1 Debian-5
+Effective host scan rate: 1.29 hosts/s
+root@e04840cd8921:/usr# (cd test-cases-local; timeout 10s ./step2-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:31 UTC
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Initiating ARP Ping Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Completed ARP Ping Scan at 03:31, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Discovered open port 2222/tcp on 172.17.0.2
+Completed SYN Stealth Scan at 03:31, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.2.
+Initiating NSE at 03:31
+:jkaczmarskiute 172.17.0.2:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.2:2222] Trying username/password pair: marcin001:marcin001
+:12345678-brute 172.17.0.2:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.2:2222] Trying username/password pair: marcin001:12345678
+:zdt7*UHB-brute 172.17.0.2:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.2:2222] Trying username/password pair: marcin001:zdt7*UHB
+Completed NSE at 03:31, 3.61s elapsed
+Nmap scan report for kippo (172.17.0.2)
+Host is up (0.000065s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-brute:
+|   Accounts:
+|     marcin001:zdt7*UHB - Valid credentials
+|_  Statistics: Performed 6 guesses in 4 seconds, average tps: 1.5
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 4.51 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:31 UTC
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Initiating ARP Ping Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Completed ARP Ping Scan at 03:31, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:31
+Scanning kippo (172.17.0.2) [1 port]
+Discovered open port 2222/tcp on 172.17.0.2
+Completed SYN Stealth Scan at 03:31, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.2.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.39s elapsed
+Nmap scan report for kippo (172.17.0.2)
+Host is up (0.000064s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-publickey-acceptance:
+|_  Accepted Public Keys: No public keys accepted
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.27 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+root@e04840cd8921:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step3-1.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+marcin001@svr03:~$ # [SSH session commands]
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Listing directory contents
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Home directory
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ls ~
+ls: cannot access /home/marcin001/~: No such file or directory
+marcin001@svr03:~$
+marcin001@svr03:~$ ls -la ~
+ls: cannot access /home/marcin001/~: No such file or directory
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Root directory
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ls /
+lost+found vmlinuz    srv        sys        run        sbin       proc
+mnt        bin        usr        tmp        var        initrd.img etc
+opt        boot       selinux    home       media      lib        root
+dev
+marcin001@svr03:~$
+marcin001@svr03:~$ ls -la /
+drwxr-xr-x 1 root root  4096 2023-05-29 03:31 .
+drwxr-xr-x 1 root root  4096 2023-05-29 03:31 ..
+drwx------ 1 root root 16384 2013-04-05 11:52 lost+found
+lrwxrwxrwx 1 root root    28 2013-04-05 11:53 vmlinuz -> /boot/vmlinuz-3.2.0-4-686-pae
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 srv
+drwxr-xr-x 1 root root     0 2013-04-05 12:03 sys
+drwxr-xr-x 1 root root   380 2013-04-05 12:06 run
+drwxr-xr-x 1 root root  4096 2013-04-05 12:03 sbin
+dr-xr-xr-x 1 root root     0 2013-04-05 12:03 proc
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 mnt
+drwxr-xr-x 1 root root  4096 2013-04-05 11:53 bin
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 usr
+drwxrwxrwx 1 root root  4096 2013-04-05 12:17 tmp
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 var
+lrwxrwxrwx 1 root root    32 2013-04-05 11:53 initrd.img -> /boot/initrd.img-3.2.0-4-686-pae
+drwxr-xr-x 1 root root  4096 2013-04-05 12:06 etc
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 opt
+drwxr-xr-x 1 root root  4096 2013-04-05 12:02 boot
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 selinux
+drwxr-xr-x 1 root root  4096 2013-04-05 12:02 home
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 media
+drwxr-xr-x 1 root root  4096 2013-04-05 12:01 lib
+drwx------ 1 root root  4096 2013-04-05 12:25 root
+drwxr-xr-x 1 root root  3060 2013-04-05 12:03 dev
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Printing a file to console
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## A file from working directory
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ cat ~/my_private_file.txt
+root@e04840cd8921:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" sftp -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -P "$PORT" "$USER@$HOST" < ./step4-1.sh)
+subsystem request failed on channel 0
+Connection closed.
+Connection closed
+root@e04840cd8921:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step4-2.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+marcin001@svr03:~$ # [SSH session commands]
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # "Upload" files using command-line HTTP clients
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## wget
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+Sorry, SSL not supported in this release
+marcin001@svr03:~$
+marcin001@svr03:~$ wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+--2023-05-29 03:32:18--  http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+Connecting to sklep.kamed.com.pl:80... connected.
+HTTP request sent, awaiting response...
+wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+
+
+
+## curl
+
+
+
+curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+
+curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+
+curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+
+200 OK
+Length: 5340 (5K) [image/jpeg]
+Saving to: `/home/marcin001/stetoskop_wget.jpg
+
+100%[======================================>] 5,340        39K/s/s  eta 0s
+
+2023-05-29 03:32:19 (39 KB/s) - `/home/marcin001/stetoskop_wget.jpg' saved [5340/5340]
+marcin001@svr03:~$ root@e04840cd8921:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=ns=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step5-1.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+marcin001@svr03:~$ # [SSH session commands]
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # File operations
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Modification
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ sed -i 's/ala/koala/ig' ~/my_private_file.txt
+bash: sed: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Deletion
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ rm -f ~/my_private_file.txt
+rm: cannot remove `~/my_private_file.txt': No such file or directory
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Creation
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ echo "Example content" > ~/my_new_file.txt
+Example content > ~/my_new_file.txt
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Superuser access
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Invalid credentials
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ echo "bad password" | sudo -S ls /
+bad password | sudo -S ls /
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ## Valid credentials
+bash: ##: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ echo "good password" | sudo -S ls /
+good password | sudo -S ls /
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Making file executable
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+curl -X HEAD -i https://google.com/ > ~/malicious_script.sh
+marcin001@svr03:~$
+marcin001@svr03:~$ echo "echo HELLO" > ~/hello.sh
+echo HELLO > ~/hello.sh
+marcin001@svr03:~$
+marcin001@svr03:~$ chmod +x ~/malicious_script.sh
+chmod: cannot access ~/malicious_script.sh: No such file or directory
+marcin001@svr03:~$
+marcin001@svr03:~$ chmod +x ~/hello.sh
+chmod: cannot access ~/hello.sh: No such file or directory
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Adding cron task to run uploaded script
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
+bash: (crontab: command not found
+-n 0 4 8-14 * *
+-n ~/hello.sh) | crontab -
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ # Running uploaded script
+bash: #: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$
+marcin001@svr03:~$ ~/malicious_script.sh &
+bash: ~/malicious_script.sh: command not found
+marcin001@svr03:~$
+marcin001@svr03:~$ root@e04840cd8921:/usr# exit
+exit
+dawid@DESKTOP-AK6U9OC:/mnt/d/Programowanie/studia/BECYB/honeypots$ docker rm -f sshpass
+ker run --name sshpass --link=cowrie --expose=2222 -v ./test-cases:/usr/test-cases -v ./test-cases-local:/usr/test-cases-local -it sshpass /bin/bashsshpass
+dawid@DESKTOP-AK6U9OC:/mnt/d/Programowanie/studia/BECYB/honeypots$ docker run --name sshpass --link=cowrie --expose=2222 -v ./test-cases:/usr/test-cases -v ./test-cases-local:/usr/test-cases-local -it sshpass /bin/bash
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+root@c15d221145ce:/usr# export USER=marcin001
+root@c15d221145ce:/usr# export HOST=cowrie
+root@c15d221145ce:/usr# export PORT=2222
+root@c15d221145ce:/usr# export PASS=zdt7*UHB
+root@c15d221145ce:/usr# (cd test-cases-local; timeout 10s ./step1-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
+Initiating ARP Ping Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Completed ARP Ping Scan at 03:32, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Discovered open port 2222/tcp on 172.17.0.3
+Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+Nmap scan report for cowrie (172.17.0.3)
+Host is up (0.000093s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+MAC Address: 02:42:AC:11:00:03 (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.74 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
+Initiating ARP Ping Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Completed ARP Ping Scan at 03:32, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Discovered open port 2222/tcp on 172.17.0.3
+Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+Nmap scan report for cowrie (172.17.0.3)
+Host is up (0.00013s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+MAC Address: 02:42:AC:11:00:03 (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
+NSE: Loaded 4 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:32
+Completed NSE at 03:32, 0.00s elapsed
+Initiating ARP Ping Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Completed ARP Ping Scan at 03:32, 0.25s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:32
+Scanning cowrie (172.17.0.3) [1 port]
+Discovered open port 2222/tcp on 172.17.0.3
+Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.3.
+Initiating NSE at 03:32
+Completed NSE at 03:32, 0.10s elapsed
+Nmap scan report for cowrie (172.17.0.3)
+Host is up (0.000064s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-auth-methods:
+|   Supported authentication methods:
+|     publickey
+|_    password
+| ssh-hostkey:
+|   2048 6b:1b:00:62:fc:08:cb:b3:47:67:f1:1c:8d:5a:ab:29 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCg54Ft95VUPpgh/g/bcPN+97ZN+jZNuDCzZmtA5CyKovOaRtnjrn+HO+mUGuKTqjX2cIrvLO01oTZIUO9nWDftfBCv8x2jle3S32naJry8eYl4y57h8VPukTsHWk0eQkSdL03zhqMy3oehNXgSMF8BrqXScK3bX73To1tg8yCSXXCVBKryzKS/g9oBjij7f5LCRIByUQmmQipJD2/HEYdsxPXAVzZQ3MDigwUgTbFRv4idjnf76QkeFzc82yAixC9e3QgHs8Kezcxi9bqXxAR2DxsMQz36vW4MT16/GcJmh+dkD9oH61WLbeR2YhfE9upxNQz7WGq6CCXJzoCxCGiB
+|   256 d0:96:6c:35:f2:b4:95:a1:bc:7b:d9:25:43:31:f3:bc (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOj5xf8nPV9xFzRQQB0VdcCw8syqG9krDWb1pNbFH3LqVuWxFRqzwfchYj+eFeMorHjzhbYBHFEOml+AputGrtA=
+|   256 79:e2:51:18:a8:90:7d:a4:8b:11:67:4f:25:8f:a7:17 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIABeGJLTaYb9qXUSeVO8Dtcog/i/W1VpGOntbcbmeJ/
+| ssh2-enum-algos:
+|   kex_algorithms: (7)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group14-sha1
+|       ext-info-s
+|   server_host_key_algorithms: (3)
+|       ssh-rsa
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (9)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|   mac_algorithms: (5)
+|       hmac-sha2-512
+|       hmac-sha2-384
+|       hmac-sha2-256
+|       hmac-sha1
+|       hmac-md5
+|   compression_algorithms: (3)
+|       zlib@openssh.com
+|       zlib
+|_      none
+MAC Address: 02:42:AC:11:00:03 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:32
+Completed NSE at 03:32, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+OpenSSH_7.9p1 Debian-10+deb10u2, OpenSSL 1.1.1n  15 Mar 2022
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug2: resolving "cowrie" port 2222
+debug2: ssh_connect_direct
+debug1: Connecting to cowrie [172.17.0.3] port 2222.
+debug1: Connection established.
+debug1: SELinux support disabled
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: identity file /root/.ssh/id_xmss type -1
+debug1: identity file /root/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.0p1 Debian-4+deb7u2
+debug1: match: OpenSSH_6.0p1 Debian-4+deb7u2 pat OpenSSH* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to cowrie:2222 as 'root'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,ext-info-s
+debug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc
+debug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc
+debug2: MACs ctos: hmac-sha2-512,hmac-sha2-384,hmac-sha2-256,hmac-sha1,hmac-md5
+debug2: MACs stoc: hmac-sha2-512,hmac-sha2-384,hmac-sha2-256,hmac-sha1,hmac-md5
+debug2: compression ctos: zlib@openssh.com,zlib,none
+debug2: compression stoc: zlib@openssh.com,zlib,none
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: kex: client->server cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:/aDhh9FhgT/Ek3glwEKEXQwiNQJLif/J14qZTG04ook
+debug1: checking without port identifier
+Warning: Permanently added '[cowrie]:2222,[172.17.0.3]:2222' (ECDSA) to the list of known hosts.
+debug2: set_newkeys: mode 1
+debug1: rekey after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey after 4294967296 blocks
+debug1: Will attempt key: /root/.ssh/id_rsa
+debug1: Will attempt key: /root/.ssh/id_dsa
+debug1: Will attempt key: /root/.ssh/id_ecdsa
+debug1: Will attempt key: /root/.ssh/id_ed25519
+debug1: Will attempt key: /root/.ssh/id_xmss
+debug2: pubkey_prepare: done
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519>
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Trying private key: /root/.ssh/id_rsa
+debug1: Trying private key: /root/.ssh/id_dsa
+debug1: Trying private key: /root/.ssh/id_ecdsa
+debug1: Trying private key: /root/.ssh/id_ed25519
+debug1: Trying private key: /root/.ssh/id_xmss
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+root@cowrie: Permission denied (publickey,password).
+172.17.0.3:2222 SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
+Effective host scan rate: 2.62 hosts/s
+root@c15d221145ce:/usr# (cd test-cases-local; timeout 10s ./step2-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:33 UTC
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:33
+Completed NSE at 03:33, 0.00s elapsed
+Initiating ARP Ping Scan at 03:33
+Scanning cowrie (172.17.0.3) [1 port]
+Completed ARP Ping Scan at 03:33, 0.33s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:33
+Scanning cowrie (172.17.0.3) [1 port]
+Discovered open port 2222/tcp on 172.17.0.3
+Completed SYN Stealth Scan at 03:33, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.3.
+Initiating NSE at 03:33
+:jkaczmarskiute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:marcin001
+:12345678-brute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:12345678
+:zdt7*UHB-brute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
+NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:zdt7*UHB
+Completed NSE at 03:33, 1.47s elapsed
+Nmap scan report for cowrie (172.17.0.3)
+Host is up (0.00012s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-brute:
+|   Accounts:
+|     marcin001:zdt7*UHB - Valid credentials
+|_  Statistics: Performed 6 guesses in 1 seconds, average tps: 6.0
+MAC Address: 02:42:AC:11:00:03 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:33
+Completed NSE at 03:33, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.47 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:33 UTC
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:33
+Completed NSE at 03:33, 0.00s elapsed
+Initiating ARP Ping Scan at 03:33
+Scanning cowrie (172.17.0.3) [1 port]
+Completed ARP Ping Scan at 03:33, 0.25s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:33
+Scanning cowrie (172.17.0.3) [1 port]
+Discovered open port 2222/tcp on 172.17.0.3
+Completed SYN Stealth Scan at 03:33, 0.25s elapsed (1 total ports)
+NSE: Script scanning 172.17.0.3.
+Initiating NSE at 03:33
+Completed NSE at 03:33, 0.13s elapsed
+Nmap scan report for cowrie (172.17.0.3)
+Host is up (0.000088s latency).
+
+PORT     STATE SERVICE
+2222/tcp open  EtherNetIP-1
+| ssh-publickey-acceptance:
+|_  Accepted Public Keys: No public keys accepted
+MAC Address: 02:42:AC:11:00:03 (Unknown)
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:33
+Completed NSE at 03:33, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step3-1.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+marcin001@svr04:~$ # [SSH session commands]
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # Listing directory contents
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Home directory
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ls ~
+ls: cannot access /home/marcin001/~: No such file or directory
+marcin001@svr04:~$
+marcin001@svr04:~$ ls -la ~
+ls: cannot access /home/marcin001/~: No such file or directory
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Root directory
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ls /
+bin        boot       dev        etc        home       initrd.img lib
+lost+found media      mnt        opt        proc       root       run
+sbin       selinux    srv        sys        test2      tmp        usr
+var        vmlinuz
+marcin001@svr04:~$
+marcin001@svr04:~$ ls -la /
+drwxr-xr-x 1 root root  4096 2013-04-05 12:03 .
+drwxr-xr-x 1 root root  4096 2013-04-05 12:03 ..
+drwxr-xr-x 1 root root  4096 2013-04-05 11:53 bin
+drwxr-xr-x 1 root root  4096 2013-04-05 12:02 boot
+drwxr-xr-x 1 root root  3060 2013-04-05 12:03 dev
+drwxr-xr-x 1 root root  4096 2013-04-05 12:06 etc
+drwxr-xr-x 1 root root  4096 2013-04-05 12:02 home
+lrwxrwxrwx 1 root root    32 2013-04-05 11:53 initrd.img -> /boot/initrd.img-3.2.0-4-686-pae
+drwxr-xr-x 1 root root  4096 2013-04-05 12:01 lib
+drwx------ 1 root root 16384 2013-04-05 11:52 lost+found
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 media
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 mnt
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 opt
+dr-xr-xr-x 1 root root     0 2013-04-05 12:03 proc
+drwx------ 1 root root  4096 2013-04-05 12:25 root
+drwxr-xr-x 1 root root   380 2013-04-05 12:06 run
+drwxr-xr-x 1 root root  4096 2013-04-05 12:03 sbin
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 selinux
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 srv
+drwxr-xr-x 1 root root     0 2013-04-05 12:03 sys
+-rwxr-xr-x 1 root root   500 2021-05-30 04:44 test2
+drwxrwxrwt 1 root root  4096 2013-04-05 12:17 tmp
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 usr
+drwxr-xr-x 1 root root  4096 2013-04-05 11:52 var
+lrwxrwxrwx 1 root root    28 2013-04-05 11:53 vmlinuz -> /boot/vmlinuz-3.2.0-4-686-pae
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # Printing a file to console
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## A file from working directory
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ cat ~/my_private_file.txt
+Ala ma kota
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## System configuration file
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ cat /etc/ssh/sshd_config
+cat: /etc/ssh/sshd_config: No such file or directory
+marcin001@svr04:~$
+marcin001@svr04:~$ root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" sftp -o "StrictHostKeyChecking=ms=+diffie-hellman-group1-sha1" -P "$PORT" "$USER@$HOST" < ./step4-1.sh)
+Connected to marcin001@cowrie.
+sftp> # [Local commands]
+sftp>
+sftp>
+sftp> # Download files using SFTP
+sftp>
+sftp> get ./my_private_file.txt
+Fetching /home/marcin001/./my_private_file.txt to my_private_file.txt
+sftp> get ./my_private_script.sh
+Fetching /home/marcin001/./my_private_script.sh to my_private_script.sh
+sftp>
+sftp>
+sftp> # Upload files using SFTP
+sftp>
+sftp> put ./test-cases/malicious_script.sh
+stat ./test-cases/malicious_script.sh: No such file or directory
+sftp> put ./test-cases/some_data.csv
+stat ./test-cases/some_data.csv: No such file or directory
+root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step4-2.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+marcin001@svr04:~$ # [SSH session commands]
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # "Upload" files using command-line HTTP clients
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## wget
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+--2023-05-29 03:33:35--  https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+Connecting to gist.githubusercontent.com:None... connected.
+HTTP request sent, awaiting response...
+wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+
+wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+
+
+
+## curl
+
+
+
+curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+
+curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+
+curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+
+root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step5-1.sh)
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+marcin001@svr04:~$ # [SSH session commands]
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # File operations
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Modification
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ sed -i 's/ala/koala/ig' ~/my_private_file.txt
+-bash: sed: command not found
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Deletion
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ rm -f ~/my_private_file.txt
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Creation
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ echo "Example content" > ~/my_new_file.txt
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # Superuser access
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Invalid credentials
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ echo "bad password" | sudo -S ls /
+bin        boot       dev        etc        home       initrd.img lib
+lost+found media      mnt        opt        proc       root       run
+sbin       selinux    srv        sys        test2      tmp        usr
+var        vmlinuz
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ ## Valid credentials
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ echo "good password" | sudo -S ls /
+bin        boot       dev        etc        home       initrd.img lib
+lost+found media      mnt        opt        proc       root       run
+sbin       selinux    srv        sys        test2      tmp        usr
+var        vmlinuz
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # Making file executable
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+marcin001@svr04:~$
+marcin001@svr04:~$ echo "echo HELLO" > ~/hello.sh
+marcin001@svr04:~$
+marcin001@svr04:~$ chmod +x ~/malicious_script.sh
+marcin001@svr04:~$
+marcin001@svr04:~$ chmod +x ~/hello.sh
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ # Adding cron task to run uploaded script
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$
+marcin001@svr04:~$ (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
+
+
+
+
+
+# Running uploaded script
+
+
+
+~/malicious_script.sh &
+
+root@c15d221145ce:/usr# exit
+exit

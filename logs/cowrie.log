@@ -1,698 +1,608 @@
-2023-05-29T02:38:11+0000 [-] Python Version 3.9.2 (default, Feb 28 2021, 17:03:44) [GCC 10.2.1 20210110]
-2023-05-29T02:38:11+0000 [-] Twisted Version 22.10.0
-2023-05-29T02:38:11+0000 [-] Cowrie Version 2.5.0
-2023-05-29T02:38:11+0000 [-] Loaded output engine: jsonlog
-2023-05-29T02:38:11+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.10.0 (/cowrie/cowrie-env/bin/python3 3.9.2) starting up.
-2023-05-29T02:38:11+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
-2023-05-29T02:38:11+0000 [-] CowrieSSHFactory starting on 2222
-2023-05-29T02:38:11+0000 [cowrie.ssh.factory.CowrieSSHFactory#info] Starting factory <cowrie.ssh.factory.CowrieSSHFactory object at 0x7fa1e268dc10>
-2023-05-29T02:38:11+0000 [-] Ready to accept SSH connections
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35248 (172.17.0.3:2222) [session: e1acaf1b2c1d]
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35256 (172.17.0.3:2222) [session: ffe16ed1aa0d]
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35266 (172.17.0.3:2222) [session: 91a3fd867d0b]
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35276 (172.17.0.3:2222) [session: 08d5a0fcc5a2]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,3,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,1,172.17.0.4] Remote SSH version: SSH-1.5-NmapNSE_1.0
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,2,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Enum-Algos
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35284 (172.17.0.3:2222) [session: b135b8bae028]
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,1,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,2,172.17.0.4] SSH client hassh fingerprint: a20aced7c9824fd804f59e68dd801ad3
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+2023-05-29T03:31:20+0000 [-] Python Version 3.9.2 (default, Feb 28 2021, 17:03:44) [GCC 10.2.1 20210110]
+2023-05-29T03:31:20+0000 [-] Twisted Version 22.10.0
+2023-05-29T03:31:20+0000 [-] Cowrie Version 2.5.0
+2023-05-29T03:31:20+0000 [-] Loaded output engine: jsonlog
+2023-05-29T03:31:20+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.10.0 (/cowrie/cowrie-env/bin/python3 3.9.2) starting up.
+2023-05-29T03:31:20+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2023-05-29T03:31:20+0000 [-] CowrieSSHFactory starting on 2222
+2023-05-29T03:31:20+0000 [cowrie.ssh.factory.CowrieSSHFactory#info] Starting factory <cowrie.ssh.factory.CowrieSSHFactory object at 0x7feeb2ea37c0>
+2023-05-29T03:31:20+0000 [-] Ready to accept SSH connections
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43776 (172.17.0.3:2222) [session: e1322699ba1c]
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43780 (172.17.0.3:2222) [session: c3a0f19707cc]
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43796 (172.17.0.3:2222) [session: e7c3a17fa33c]
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43798 (172.17.0.3:2222) [session: 18379e859997]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,0,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43814 (172.17.0.3:2222) [session: 70fca89527ef]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,1,172.17.0.4] Remote SSH version: SSH-1.5-NmapNSE_1.0
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,3,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Enum-Algos
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,1,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,0,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,3,172.17.0.4] SSH client hassh fingerprint: a20aced7c9824fd804f59e68dd801ad3
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
 	reason: b"couldn't match all kex parts"
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,3,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,2,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,4,172.17.0.4] Remote SSH version: SSH-1.5-Nmap-SSH1-Hostkey
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,4,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35292 (172.17.0.3:2222) [session: 9148b3cb893b]
-2023-05-29T02:40:40+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'SCAML' trying auth b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,3,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,5,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,5,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,3,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,4,172.17.0.4] Remote SSH version: SSH-1.5-Nmap-SSH1-Hostkey
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,4,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43824 (172.17.0.3:2222) [session: 6f779defa8b0]
+2023-05-29T03:32:55+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'SPDFZ' trying auth b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,0,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,5,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,5,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
 	reason: b"couldn't match all kex parts"
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,5,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35304 (172.17.0.3:2222) [session: 8de7df0ab1f0]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,6,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,6,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,6,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35314 (172.17.0.3:2222) [session: 2d12fdd5e0cf]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,7,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,7,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,7,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35324 (172.17.0.3:2222) [session: 970bcdd4b6c5]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,8,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,8,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,5,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43838 (172.17.0.3:2222) [session: 3af8fd0f66df]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,6,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,6,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,6,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43850 (172.17.0.3:2222) [session: a93163d807fe]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,7,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,7,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,7,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43856 (172.17.0.3:2222) [session: e914a2c52577]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,8,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,8,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
 	reason: b"couldn't match all kex parts"
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,8,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35334 (172.17.0.3:2222) [session: b016958eae89]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,9,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,9,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,8,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43858 (172.17.0.3:2222) [session: 86e23a400986]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,9,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,9,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
 	reason: b"couldn't match all kex parts"
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,9,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35338 (172.17.0.3:2222) [session: 4df5c7871649]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,10,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,10,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-ed25519'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,10,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,0,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35348 (172.17.0.3:2222) [session: 43df3ddc39ec]
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,11,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,11,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:40+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
-2023-05-29T02:40:40+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:40+0000 [HoneyPotSSHTransport,11,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:41+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:41+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:41+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35364 (172.17.0.3:2222) [session: c3fbaa2aabb6]
-2023-05-29T02:40:41+0000 [HoneyPotSSHTransport,12,172.17.0.4] Remote SSH version: SSH-1.0-SSH_Version_Mapper
-2023-05-29T02:40:41+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:41+0000 [HoneyPotSSHTransport,12,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53684 (172.17.0.3:2222) [session: 367e9edef4f7]
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,13,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,13,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53696 (172.17.0.3:2222) [session: b4cf83eb1b97]
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53700 (172.17.0.3:2222) [session: 752e3a3952ac]
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53714 (172.17.0.3:2222) [session: fdca12fcd3aa]
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53724 (172.17.0.3:2222) [session: ef05d45cc631]
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53730 (172.17.0.3:2222) [session: a7fecbf61bf2]
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,14,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,15,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,16,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,17,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,18,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,14,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,15,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,16,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,17,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,18,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,14,172.17.0.4] login attempt [b'jkaczmarski\r'/b'jkaczmarski\r'] failed
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,15,172.17.0.4] login attempt [b'marcin001'/b'marcin001'] failed
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,16,172.17.0.4] login attempt [b'jkaczmarski\r'/b'12345678\r'] failed
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,17,172.17.0.4] login attempt [b'marcin001'/b'12345678\r'] failed
-2023-05-29T02:40:46+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
-2023-05-29T02:40:46+0000 [HoneyPotSSHTransport,18,172.17.0.4] login attempt [b'jkaczmarski\r'/b'zdt7*UHB'] failed
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53746 (172.17.0.3:2222) [session: e953e6c11a8d]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53758 (172.17.0.3:2222) [session: 485afee3727c]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53766 (172.17.0.3:2222) [session: a22496ea1368]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53768 (172.17.0.3:2222) [session: df87bddc67b8]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53770 (172.17.0.3:2222) [session: 22b064ee630d]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53774 (172.17.0.3:2222) [session: 2c3241d59ced]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53780 (172.17.0.3:2222) [session: f8a27da98ffa]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53786 (172.17.0.3:2222) [session: 02312b0b489a]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53802 (172.17.0.3:2222) [session: 82a695b0cd99]
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53818 (172.17.0.3:2222) [session: 77541fe59361]
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,19,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,20,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,21,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,23,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,24,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,21,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,23,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,25,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,26,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,27,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,28,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,19,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,20,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,24,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,25,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,26,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,27,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,28,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,14,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,19,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,15,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,20,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,16,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,21,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,18,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,23,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:40:47+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,17,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,13,172.17.0.4] Connection lost after 1 seconds
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,22,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,28,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,24,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,25,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,27,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:47+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:47+0000 [HoneyPotSSHTransport,26,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53822 (172.17.0.3:2222) [session: 673e1475de77]
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,29,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,29,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' trying auth b'publickey'
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,29,172.17.0.4] public key attempt for user b'jkaczmarski' of type b'ssh-rsa' with fingerprint 0d:dc:8c:f6:2b:32:8b:5c:ef:48:86:ef:f1:34:eb:b2
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' failed auth b'publickey'
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53826 (172.17.0.3:2222) [session: d01047ab01ee]
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,30,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,30,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' trying auth b'publickey'
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,30,172.17.0.4] public key attempt for user b'jkaczmarski' of type b'ssh-rsa' with fingerprint f8:22:bb:6e:42:72:40:8a:45:20:c3:7d:65:f9:e6:67
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' failed auth b'publickey'
-2023-05-29T02:40:48+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53842 (172.17.0.3:2222) [session: 70545ab2479d]
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,31,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:48+0000 [HoneyPotSSHTransport,31,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:48+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'publickey'
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,31,172.17.0.4] public key attempt for user b'marcin001' of type b'ssh-rsa' with fingerprint 0d:dc:8c:f6:2b:32:8b:5c:ef:48:86:ef:f1:34:eb:b2
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'publickey'
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
-2023-05-29T02:40:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53846 (172.17.0.3:2222) [session: 625db24da69b]
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,32,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,32,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,30,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,29,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'publickey'
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,32,172.17.0.4] public key attempt for user b'marcin001' of type b'ssh-rsa' with fingerprint f8:22:bb:6e:42:72:40:8a:45:20:c3:7d:65:f9:e6:67
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'publickey'
-2023-05-29T02:40:49+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,32,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:49+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:49+0000 [HoneyPotSSHTransport,31,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:53862 (172.17.0.3:2222) [session: 00038c6b5721]
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:51+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:40:51+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:40:51+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:40:51+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:40:51+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:40:51+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:40:51+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:40:51+0000 [twisted.conch.ssh.session#info] Getting shell
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # Listing directory contents
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## Home directory
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls ~
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls ~
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls -la ~
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls -la ~
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## Root directory
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls /
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls /
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls -la /
-2023-05-29T02:40:51+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls -la /
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # Printing a file to console
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## A file from working directory
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: cat ~/my_private_file.txt
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: cat ~/my_private_file.txt
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## System configuration file
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: cat /etc/ssh/sshd_config
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: cat /etc/ssh/sshd_config
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
-2023-05-29T02:40:52+0000 [twisted.conch.ssh.session#info] exitCode: 0
-2023-05-29T02:40:52+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/58b0818a2ca1089766eae09eedb6a3fd06272332a676922e8d6a34aa31a120a4 after 0 seconds
-2023-05-29T02:40:52+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:40:52+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:40:52+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:40:52+0000 [HoneyPotSSHTransport,33,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:40:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:40:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:40:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:50854 (172.17.0.3:2222) [session: 99f1329c6caa]
-2023-05-29T02:40:59+0000 [HoneyPotSSHTransport,34,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:40:59+0000 [HoneyPotSSHTransport,34,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:40:59+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:40:59+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:40:59+0000 [HoneyPotSSHTransport,34,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:40:59+0000 [HoneyPotSSHTransport,34,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:40:59+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:40:59+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:40:59+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:40:59+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:40:59+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:40:59+0000 [twisted.conch.ssh.session#info] Asking for subsystem "b'sftp'"
-2023-05-29T02:40:59+0000 [cowrie.shell.avatar.CowrieUser#debug] Subsystem lookup: {b'sftp': <class 'twisted.conch.ssh.filetransfer.FileTransferServer'>}
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: INIT requestId=3
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: REALPATH requestId=1
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=2
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/~/my_private_file.txt'
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=3
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/~/my_private_script.sh'
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=4
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/~/'
-2023-05-29T02:41:00+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=5
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/~/'
-2023-05-29T02:41:00+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:41:00+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:41:00+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:41:00+0000 [HoneyPotSSHTransport,34,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:43:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:43:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:43:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:33096 (172.17.0.3:2222) [session: 185ab46c3be3]
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:43:09+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:43:09+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:43:09+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:43:09+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:43:09+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:43:09+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.session#info] Asking for subsystem "b'sftp'"
-2023-05-29T02:43:09+0000 [cowrie.shell.avatar.CowrieUser#debug] Subsystem lookup: {b'sftp': <class 'twisted.conch.ssh.filetransfer.FileTransferServer'>}
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: INIT requestId=3
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: REALPATH requestId=1
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=2
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=3
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=4
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=5
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=6
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=7
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\x07' b'8770830688717'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=8
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=9
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=10
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=11
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=12
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=13
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\r' b'8770829068255'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=14
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./'
-2023-05-29T02:43:09+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=15
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./'
-2023-05-29T02:43:09+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:43:09+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:43:09+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:43:09+0000 [HoneyPotSSHTransport,35,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:44:33+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:44:33+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:44:33+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:60640 (172.17.0.3:2222) [session: 0e0b41a5ff40]
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:44:33+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:44:33+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:44:33+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:44:33+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:44:33+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:44:33+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.session#info] Asking for subsystem "b'sftp'"
-2023-05-29T02:44:33+0000 [cowrie.shell.avatar.CowrieUser#debug] Subsystem lookup: {b'sftp': <class 'twisted.conch.ssh.filetransfer.FileTransferServer'>}
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: INIT requestId=3
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: REALPATH requestId=1
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=2
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=3
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=4
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_file.txt'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=5
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=6
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=7
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\x07' b'8770829739093'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=8
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=9
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=10
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_script.sh'
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=11
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=12
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=13
-2023-05-29T02:44:33+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\r' b'8770829739093'
-2023-05-29T02:44:33+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:44:33+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:44:33+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:44:33+0000 [HoneyPotSSHTransport,36,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:45:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:45:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:45:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:47346 (172.17.0.3:2222) [session: ea46b2c2b493]
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:45:15+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:45:15+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:45:15+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:45:15+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:45:15+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:45:15+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:45:15+0000 [twisted.conch.ssh.session#info] Getting shell
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: # "Upload" files using command-line HTTP clients
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: ## wget
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] CMD: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Command found: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: ## curl
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] QUEUED INPUT: 
-2023-05-29T02:45:15+0000 [twisted.conch.ssh.session#info] exitCode: 0
-2023-05-29T02:45:15+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/2a05ebb91242315e00dd967d2d8ed971ffa13aefda3f1048be423558ea218c30 after 0 seconds
-2023-05-29T02:45:15+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:45:15+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:45:15+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:45:15+0000 [HoneyPotSSHTransport,37,172.17.0.4] Connection lost after 0 seconds
-2023-05-29T02:45:16+0000 [twisted.web.client._HTTP11ClientFactory#info] Starting factory _HTTP11ClientFactory(<function HTTPConnectionPool._newConnection.<locals>.quiescentCallback at 0x7fa1e21738b0>, <twisted.internet.endpoints._WrapperEndpoint object at 0x7fa1e25c4c40>)
-2023-05-29T02:45:16+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] Unhandled Error
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,9,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43868 (172.17.0.3:2222) [session: 9420e5659120]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,10,172.17.0.4] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,10,172.17.0.4] SSH client hassh fingerprint: 3c0fd089c7135d88c6319124fc5a15d2
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-ed25519'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,10,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,2,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43870 (172.17.0.3:2222) [session: 2718bc5cad19]
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,11,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,11,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:32:55+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2023-05-29T03:32:55+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:55+0000 [HoneyPotSSHTransport,11,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:32:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:32:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:32:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43884 (172.17.0.3:2222) [session: b1277b40fe0d]
+2023-05-29T03:32:56+0000 [HoneyPotSSHTransport,12,172.17.0.4] Remote SSH version: SSH-1.0-SSH_Version_Mapper
+2023-05-29T03:32:56+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:32:56+0000 [HoneyPotSSHTransport,12,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43888 (172.17.0.3:2222) [session: ebdb2d4d6c16]
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,13,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,13,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43898 (172.17.0.3:2222) [session: 0869dcfcd39a]
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43914 (172.17.0.3:2222) [session: 02633b636854]
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43922 (172.17.0.3:2222) [session: f1d1c5233f03]
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43938 (172.17.0.3:2222) [session: e4a6116e738a]
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43946 (172.17.0.3:2222) [session: 3303d92b509a]
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,14,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,15,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,16,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,17,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,18,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,14,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,15,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,16,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,17,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,18,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:03+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,14,172.17.0.4] login attempt [b'jkaczmarski\r'/b'jkaczmarski\r'] failed
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,15,172.17.0.4] login attempt [b'marcin001'/b'marcin001'] failed
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,16,172.17.0.4] login attempt [b'jkaczmarski\r'/b'12345678\r'] failed
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,17,172.17.0.4] login attempt [b'marcin001'/b'12345678\r'] failed
+2023-05-29T03:33:03+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' trying auth b'password'
+2023-05-29T03:33:03+0000 [HoneyPotSSHTransport,18,172.17.0.4] login attempt [b'jkaczmarski\r'/b'zdt7*UHB'] failed
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski\r' failed auth b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43954 (172.17.0.3:2222) [session: c0b530e8a3f4]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43966 (172.17.0.3:2222) [session: f6b1a5ac1804]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43978 (172.17.0.3:2222) [session: bf734f3d709c]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43980 (172.17.0.3:2222) [session: 92e05a0defe5]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43986 (172.17.0.3:2222) [session: 6f979731f78d]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:43994 (172.17.0.3:2222) [session: a77bb47dc14d]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:44006 (172.17.0.3:2222) [session: d4ef9a97a9f2]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:44012 (172.17.0.3:2222) [session: c9292a403ee6]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:44026 (172.17.0.3:2222) [session: a50c18ba5973]
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:44030 (172.17.0.3:2222) [session: be1cd0c22ddd]
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,19,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,21,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,22,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,23,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,24,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,25,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,26,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,19,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,27,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,23,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,22,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,21,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,28,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,24,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,25,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,26,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,27,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,28,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,17,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,22,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,14,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,19,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,16,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,21,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,18,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,23,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
+2023-05-29T03:33:04+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,15,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,13,172.17.0.4] Connection lost after 1 seconds
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] avatar marcin001 logging out
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,20,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,26,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,24,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,25,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,28,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:04+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:04+0000 [HoneyPotSSHTransport,27,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35130 (172.17.0.3:2222) [session: ff551c77a175]
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,29,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,29,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' trying auth b'publickey'
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,29,172.17.0.4] public key attempt for user b'jkaczmarski' of type b'ssh-rsa' with fingerprint 0d:dc:8c:f6:2b:32:8b:5c:ef:48:86:ef:f1:34:eb:b2
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' failed auth b'publickey'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35144 (172.17.0.3:2222) [session: 976544c50ac5]
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,30,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,30,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' trying auth b'publickey'
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,30,172.17.0.4] public key attempt for user b'jkaczmarski' of type b'ssh-rsa' with fingerprint f8:22:bb:6e:42:72:40:8a:45:20:c3:7d:65:f9:e6:67
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'jkaczmarski' failed auth b'publickey'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35152 (172.17.0.3:2222) [session: beaf46f9b6dc]
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,31,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,31,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'publickey'
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,31,172.17.0.4] public key attempt for user b'marcin001' of type b'ssh-rsa' with fingerprint 0d:dc:8c:f6:2b:32:8b:5c:ef:48:86:ef:f1:34:eb:b2
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'publickey'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35156 (172.17.0.3:2222) [session: 95027841b2ce]
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,32,172.17.0.4] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,32,172.17.0.4] SSH client hassh fingerprint: a7a87fbe86774c2e40cc4a7ea2ab1b3c
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,30,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,29,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'publickey'
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,32,172.17.0.4] public key attempt for user b'marcin001' of type b'ssh-rsa' with fingerprint f8:22:bb:6e:42:72:40:8a:45:20:c3:7d:65:f9:e6:67
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' failed auth b'publickey'
+2023-05-29T03:33:05+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,32,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:05+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:05+0000 [HoneyPotSSHTransport,31,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:35164 (172.17.0.3:2222) [session: 2c860b5193d0]
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:13+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
+2023-05-29T03:33:13+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
+2023-05-29T03:33:13+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-05-29T03:33:13+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2023-05-29T03:33:13+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2023-05-29T03:33:13+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
+2023-05-29T03:33:13+0000 [twisted.conch.ssh.session#info] Getting shell
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # Listing directory contents
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## Home directory
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls ~
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls ~
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls -la ~
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls -la ~
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## Root directory
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls /
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls /
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ls -la /
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: ls -la /
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: # Printing a file to console
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## A file from working directory
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: cat ~/my_private_file.txt
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: cat ~/my_private_file.txt
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: ## System configuration file
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: cat /etc/ssh/sshd_config
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Command found: cat /etc/ssh/sshd_config
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] CMD: 
+2023-05-29T03:33:13+0000 [twisted.conch.ssh.session#info] exitCode: 0
+2023-05-29T03:33:13+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/58b0818a2ca1089766eae09eedb6a3fd06272332a676922e8d6a34aa31a120a4 after 0 seconds
+2023-05-29T03:33:13+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2023-05-29T03:33:13+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] avatar marcin001 logging out
+2023-05-29T03:33:13+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:13+0000 [HoneyPotSSHTransport,33,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:36842 (172.17.0.3:2222) [session: 1550cedc8441]
+2023-05-29T03:33:23+0000 [HoneyPotSSHTransport,34,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29T03:33:23+0000 [HoneyPotSSHTransport,34,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
+2023-05-29T03:33:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:33:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:24+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:24+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:24+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
+2023-05-29T03:33:24+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
+2023-05-29T03:33:24+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
+2023-05-29T03:33:24+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-05-29T03:33:24+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2023-05-29T03:33:24+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2023-05-29T03:33:24+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.session#info] Asking for subsystem "b'sftp'"
+2023-05-29T03:33:24+0000 [cowrie.shell.avatar.CowrieUser#debug] Subsystem lookup: {b'sftp': <class 'twisted.conch.ssh.filetransfer.FileTransferServer'>}
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: INIT requestId=3
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: REALPATH requestId=1
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=2
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=3
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_file.txt'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=4
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_file.txt'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=5
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=6
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=7
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\x07' b'8791450168037'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: LSTAT requestId=8
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: STAT requestId=9
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP getAttrs: b'/home/marcin001/./my_private_script.sh'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: OPEN requestId=10
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] SFTP openFile: b'/home/marcin001/./my_private_script.sh'
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=11
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: READ requestId=12
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] dispatching: CLOSE requestId=13
+2023-05-29T03:33:24+0000 [twisted.conch.ssh.filetransfer.FileTransferServer#info] closing: b'\x00\x00\x00\r' b'8791450167827'
+2023-05-29T03:33:24+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2023-05-29T03:33:24+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] avatar marcin001 logging out
+2023-05-29T03:33:24+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:24+0000 [HoneyPotSSHTransport,34,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:51466 (172.17.0.3:2222) [session: 69dd0f668982]
+2023-05-29T03:33:34+0000 [HoneyPotSSHTransport,35,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29T03:33:34+0000 [HoneyPotSSHTransport,35,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:34+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
+2023-05-29T03:33:34+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:34+0000 [HoneyPotSSHTransport,35,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
+2023-05-29T03:33:34+0000 [HoneyPotSSHTransport,35,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
+2023-05-29T03:33:34+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
+2023-05-29T03:33:34+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-05-29T03:33:34+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2023-05-29T03:33:34+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2023-05-29T03:33:34+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
+2023-05-29T03:33:34+0000 [twisted.conch.ssh.session#info] Getting shell
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: # "Upload" files using command-line HTTP clients
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: ## wget
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] CMD: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] Command found: wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: wget -O deck_wget.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: ## curl
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: curl -o hello_curl.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] QUEUED INPUT: 
+2023-05-29T03:33:35+0000 [twisted.conch.ssh.session#info] exitCode: 0
+2023-05-29T03:33:35+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/2a05ebb91242315e00dd967d2d8ed971ffa13aefda3f1048be423558ea218c30 after 0 seconds
+2023-05-29T03:33:35+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2023-05-29T03:33:35+0000 [twisted.web.client._HTTP11ClientFactory#info] Starting factory _HTTP11ClientFactory(<function HTTPConnectionPool._newConnection.<locals>.quiescentCallback at 0x7feeb2cc98b0>, <twisted.internet.endpoints._WrapperEndpoint object at 0x7feeb34c3cd0>)
+2023-05-29T03:33:35+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] avatar marcin001 logging out
+2023-05-29T03:33:35+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:35+0000 [HoneyPotSSHTransport,35,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:35+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] Unhandled Error
 	Traceback (most recent call last):
 	  File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/client.py", line 107, in connectionLost
 	    self.original.connectionLost(reason)
@@ -709,46 +619,46 @@
 	    self.fs.chown(self.outfile, self.protocol.user.uid, self.protocol.user.gid)
 	builtins.AttributeError: 'NoneType' object has no attribute 'uid'
 	
-2023-05-29T02:45:16+0000 [twisted.python.log#error] Traceback (most recent call last):
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/client.py", line 107, in connectionLost
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     self.original.connectionLost(reason)
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/content.py", line 37, in connectionLost
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     self.finished.callback(None)
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 696, in callback
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     self._startRunCallbacks(result)
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 798, in _startRunCallbacks
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     self._runCallbacks()
-2023-05-29T02:45:16+0000 [twisted.python.log#error] --- <exception caught here> ---
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     current.result = callback(  # type: ignore[misc]
-2023-05-29T02:45:16+0000 [twisted.python.log#error]   File "/cowrie/cowrie-git/src/cowrie/commands/wget.py", line 298, in collectioncomplete
-2023-05-29T02:45:16+0000 [twisted.python.log#error]     self.fs.chown(self.outfile, self.protocol.user.uid, self.protocol.user.gid)
-2023-05-29T02:45:16+0000 [twisted.python.log#error] builtins.AttributeError: 'NoneType' object has no attribute 'uid'
-2023-05-29T02:45:16+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] None
-2023-05-29T02:45:16+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] 'NoneType' object has no attribute 'uid'
-2023-05-29T02:45:16+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] Connection was probably lost. Could not write to terminal
-2023-05-29T02:45:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
-2023-05-29T02:45:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
-2023-05-29T02:45:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:47356 (172.17.0.3:2222) [session: d4b83ec1c7d9]
-2023-05-29T02:45:23+0000 [HoneyPotSSHTransport,38,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
-2023-05-29T02:45:23+0000 [HoneyPotSSHTransport,38,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
-2023-05-29T02:45:23+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
-2023-05-29T02:45:23+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
-2023-05-29T02:45:23+0000 [HoneyPotSSHTransport,38,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
-2023-05-29T02:45:23+0000 [HoneyPotSSHTransport,38,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
-2023-05-29T02:45:23+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
-2023-05-29T02:45:23+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
-2023-05-29T02:45:23+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
-2023-05-29T02:45:23+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
-2023-05-29T02:45:23+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
-2023-05-29T02:45:23+0000 [twisted.conch.ssh.session#info] Getting shell
-2023-05-29T02:45:24+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
-2023-05-29T02:45:24+0000 [twisted.internet.defer#critical] 
+2023-05-29T03:33:35+0000 [twisted.python.log#error] Traceback (most recent call last):
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/client.py", line 107, in connectionLost
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     self.original.connectionLost(reason)
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/content.py", line 37, in connectionLost
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     self.finished.callback(None)
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 696, in callback
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     self._startRunCallbacks(result)
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 798, in _startRunCallbacks
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     self._runCallbacks()
+2023-05-29T03:33:35+0000 [twisted.python.log#error] --- <exception caught here> ---
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-env/lib/python3.9/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     current.result = callback(  # type: ignore[misc]
+2023-05-29T03:33:35+0000 [twisted.python.log#error]   File "/cowrie/cowrie-git/src/cowrie/commands/wget.py", line 298, in collectioncomplete
+2023-05-29T03:33:35+0000 [twisted.python.log#error]     self.fs.chown(self.outfile, self.protocol.user.uid, self.protocol.user.gid)
+2023-05-29T03:33:35+0000 [twisted.python.log#error] builtins.AttributeError: 'NoneType' object has no attribute 'uid'
+2023-05-29T03:33:35+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] None
+2023-05-29T03:33:35+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] 'NoneType' object has no attribute 'uid'
+2023-05-29T03:33:35+0000 [HTTP11ClientProtocol (TLSMemoryBIOProtocol),client] Connection was probably lost. Could not write to terminal
+2023-05-29T03:33:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha1
+2023-05-29T03:33:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] No moduli, no diffie-hellman-group-exchange-sha256
+2023-05-29T03:33:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.17.0.4:45928 (172.17.0.3:2222) [session: 57fdfabc15a4]
+2023-05-29T03:33:45+0000 [HoneyPotSSHTransport,36,172.17.0.4] Remote SSH version: SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+2023-05-29T03:33:45+0000 [HoneyPotSSHTransport,36,172.17.0.4] SSH client hassh fingerprint: 822cf67e3e0a7599c572aa1b3cbf6658
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-05-29T03:33:45+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'none'
+2023-05-29T03:33:45+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' trying auth b'password'
+2023-05-29T03:33:45+0000 [HoneyPotSSHTransport,36,172.17.0.4] login attempt [b'marcin001'/b'zdt7*UHB'] succeeded
+2023-05-29T03:33:45+0000 [HoneyPotSSHTransport,36,172.17.0.4] Initialized emulated server as architecture: linux-x64-lsb
+2023-05-29T03:33:45+0000 [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'marcin001' authenticated with b'password'
+2023-05-29T03:33:45+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-05-29T03:33:45+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2023-05-29T03:33:45+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2023-05-29T03:33:45+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] got global b'no-more-sessions@openssh.com' request
+2023-05-29T03:33:45+0000 [twisted.conch.ssh.session#info] Getting shell
+2023-05-29T03:33:45+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2023-05-29T03:33:45+0000 [twisted.internet.defer#critical] 
 	Traceback (most recent call last):
 	  File "/cowrie/cowrie-env/lib/python3.9/site-packages/treq/client.py", line 107, in connectionLost
 	    self.original.connectionLost(reason)
@@ -771,123 +681,123 @@
 	    self.emit(ev)
 	  File "/cowrie/cowrie-git/src/cowrie/core/output.py", line 236, in emit
 	    ev["session"] = self.sessions[sessionno]
-	builtins.KeyError: 'S37'
+	builtins.KeyError: 'S35'
 	
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: # [SSH session commands]
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: # File operations
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: ## Modification
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: sed -i 's/ala/koala/ig' ~/my_private_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Can't find command sed
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command not found: sed -i s/ala/koala/ig ~/my_private_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: ## Deletion
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: rm -f ~/my_private_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: rm -f ~/my_private_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: ## Creation
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: echo "Example content" > ~/my_new_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: echo Example content > ~/my_new_file.txt
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: # Superuser access
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: ## Invalid credentials
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: echo "bad password" | sudo -S ls /
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: sudo -S ls /
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: echo bad password
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Can't find command -S
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: ## Valid credentials
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: echo "good password" | sudo -S ls /
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: sudo -S ls /
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: echo good password
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Can't find command -S
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: # Making file executable
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: echo curl -X HEAD -i https://google.com/ > ~/malicious_script.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: echo "echo HELLO" > ~/hello.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: echo echo HELLO > ~/hello.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: chmod +x ~/malicious_script.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: chmod +x ~/malicious_script.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: chmod +x ~/hello.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: chmod +x ~/hello.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: # Adding cron task to run uploaded script
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] CMD: (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: crontab -
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Command found: crontab -l ; echo -n 0 4 8-14 * * ; echo -n ~/hello.sh
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): # Running uploaded script
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): ~/malicious_script.sh &
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] INPUT (crontab): 
-2023-05-29T02:45:24+0000 [twisted.conch.ssh.session#info] exitCode: 0
-2023-05-29T02:45:24+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Saved redir contents with SHA-256 385c5ae45747fdfac752ed001f3ec3ed4f780bfb2a3e67dea34c03411237fecb to var/lib/cowrie/downloads/385c5ae45747fdfac752ed001f3ec3ed4f780bfb2a3e67dea34c03411237fecb
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Saved redir contents with SHA-256 06f3dcc836f0374ced10bd13bba89d9d03e56918edc2d4224162d1c965db1ca8 to var/lib/cowrie/downloads/06f3dcc836f0374ced10bd13bba89d9d03e56918edc2d4224162d1c965db1ca8
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Saved redir contents with SHA-256 73410f343143f637c9699b5eb7fa82f333baece13f24d6b5d13dd129e6e9af0a to var/lib/cowrie/downloads/73410f343143f637c9699b5eb7fa82f333baece13f24d6b5d13dd129e6e9af0a
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/67985ac9410e41f786f5955caf9ec5e67cc7174f45fecfaf6c49cdcc3818ca36 after 0 seconds
-2023-05-29T02:45:24+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
-2023-05-29T02:45:24+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] avatar marcin001 logging out
-2023-05-29T02:45:24+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
-2023-05-29T02:45:24+0000 [HoneyPotSSHTransport,38,172.17.0.4] Connection lost after 0 seconds
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: # [SSH session commands]
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: # File operations
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: ## Modification
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: sed -i 's/ala/koala/ig' ~/my_private_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Can't find command sed
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command not found: sed -i s/ala/koala/ig ~/my_private_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: ## Deletion
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: rm -f ~/my_private_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: rm -f ~/my_private_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: ## Creation
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: echo "Example content" > ~/my_new_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: echo Example content > ~/my_new_file.txt
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: # Superuser access
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: ## Invalid credentials
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: echo "bad password" | sudo -S ls /
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: sudo -S ls /
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: echo bad password
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Can't find command -S
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: ## Valid credentials
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: echo "good password" | sudo -S ls /
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: sudo -S ls /
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: echo good password
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Can't find command -S
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: # Making file executable
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: echo "curl -X HEAD -i https://google.com/" > ~/malicious_script.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: echo curl -X HEAD -i https://google.com/ > ~/malicious_script.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: echo "echo HELLO" > ~/hello.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: echo echo HELLO > ~/hello.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: chmod +x ~/malicious_script.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: chmod +x ~/malicious_script.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: chmod +x ~/hello.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: chmod +x ~/hello.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: # Adding cron task to run uploaded script
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] CMD: (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | crontab -
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: crontab -
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Command found: crontab -l ; echo -n 0 4 8-14 * * ; echo -n ~/hello.sh
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): # Running uploaded script
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): ~/malicious_script.sh &
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] INPUT (crontab): 
+2023-05-29T03:33:46+0000 [twisted.conch.ssh.session#info] exitCode: 0
+2023-05-29T03:33:46+0000 [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Saved redir contents with SHA-256 73410f343143f637c9699b5eb7fa82f333baece13f24d6b5d13dd129e6e9af0a to var/lib/cowrie/downloads/73410f343143f637c9699b5eb7fa82f333baece13f24d6b5d13dd129e6e9af0a
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Saved redir contents with SHA-256 06f3dcc836f0374ced10bd13bba89d9d03e56918edc2d4224162d1c965db1ca8 to var/lib/cowrie/downloads/06f3dcc836f0374ced10bd13bba89d9d03e56918edc2d4224162d1c965db1ca8
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Saved redir contents with SHA-256 385c5ae45747fdfac752ed001f3ec3ed4f780bfb2a3e67dea34c03411237fecb to var/lib/cowrie/downloads/385c5ae45747fdfac752ed001f3ec3ed4f780bfb2a3e67dea34c03411237fecb
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Closing TTY Log: var/lib/cowrie/tty/67985ac9410e41f786f5955caf9ec5e67cc7174f45fecfaf6c49cdcc3818ca36 after 0 seconds
+2023-05-29T03:33:46+0000 [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2023-05-29T03:33:46+0000 [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Got remote error, code 11 reason: b'disconnected by user'
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] avatar marcin001 logging out
+2023-05-29T03:33:46+0000 [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-05-29T03:33:46+0000 [HoneyPotSSHTransport,36,172.17.0.4] Connection lost after 0 seconds
