@@ -1,8 +1,9 @@
-FROM alpine:3.6.5
+FROM debian:buster
 
 WORKDIR /usr/
 
-RUN apk --update --no-cache add sshpass openssh rsync nmap scanssh
+RUN apt update
+RUN apt install -y sshpass openssh-client rsync nmap scanssh pcregrep
 
 ENTRYPOINT ["sshpass"]
 

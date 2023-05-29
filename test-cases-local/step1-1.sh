@@ -15,7 +15,7 @@ nmap -v -p "$PORT" --script +ssh-auth-methods,+ssh-hostkey,+sshv1,+ssh2-enum-alg
 
 # Retrieving additional information using verbose flag in ssh client
 
-sshpass -p "$PASS" ssh -vv -p "$PORT" "$HOST"
+ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -o "BatchMode=yes" -vv -p "$PORT" "$HOST"
 
 
 # Scanning using scanssh
