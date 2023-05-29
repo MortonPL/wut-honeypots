@@ -9,5 +9,5 @@ get ./my_private_script.sh
 
 # Upload files using SFTP
 
-put ./test-cases/malicious_script.sh
-put ./test-cases/some_data.csv
+put ./malicious_script.sh
+put ./some_data.csv

