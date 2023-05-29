@@ -18,8 +18,8 @@ ls -la /
 
 ## A file from working directory
 
-#cat ~/my_private_file.txt
+cat ~/my_private_file.txt
 
 ## System configuration file
 
-#cat /etc/ssh/sshd_config
+cat /etc/ssh/sshd_config
