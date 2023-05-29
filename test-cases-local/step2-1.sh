@@ -1,7 +1,5 @@
 # [Local commands]
 
-HOST=
-PORT=
 
 # Try different credentials (valid and invalid)
 

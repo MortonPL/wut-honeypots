@@ -1,9 +1,5 @@
 # [Local commands]
 
-USER=
-HOST=
-PORT=
-
 
 # Download files using SFTP
 
